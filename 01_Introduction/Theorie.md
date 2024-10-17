@@ -1,9 +1,7 @@
 # Sommaire
 1. [Qu'est-ce que la programmation ?](#quest-ce-que-la-programmation-)
-2. [Les concepts de base de la programmation](#les-concepts-de-base-de-la-programmation-)
-   - [Variables et types de données](#variables-et-types-de-donnees-)
-   - [Instructions et séquences](#instructions-et-sequences-)
-   - [Conditions if/else](#conditions-if/else-)
+2. [Les concepts de base de la programmation](#les-concepts-de-base-de-la-programmation)
+3. 
   
 ## 1. Qu'est-ce que la programmation ?
 Explication : La programmation, c'est l'art de donner des instructions à un ordinateur pour qu'il accomplisse des tâches. Cela se fait en écrivant du code dans un langage de programmation, qui est une sorte de langage spécial que les humains utilisent pour communiquer avec les machines. Quand on écrit un programme, on crée une suite d'instructions que l'ordinateur va suivre.
@@ -12,7 +10,8 @@ Explication : La programmation, c'est l'art de donner des instructions à un ord
 
 ## 2. Les concepts de base de la programmation
 ### Variables et types de données
-- une variable est un espace mémoire où l'on stocke des informations que le programme peut utiliser. chaque variable a un nom et un type de données (par exemple, un nombre, un texte, etc.)
+- Une variable est un espace mémoire où l'on stocke des informations que le programme peut utiliser. chaque variable a un nom et un type de données (par exemple, un nombre, un texte, etc.)
+- Il y a plusieurs manières de nommer ses variables, mais la plus répendue est le camelCase : Cela consiste à écrire le premier mot du nom tout en minuscule et de coller et commencer les autres mots par une majuscule. Exemple : `maNouvelleVariable`
 ### Exemple en C# :
 ```C#
 int age = 21; // Variable de type entier (int)
@@ -69,5 +68,29 @@ for (int i = 0; i < 5; i++)
 }
 
 ```
+
+## 3. Premier programme : "Hello, World !"
+Le programme "Hello, World !" est souvent le premier programme écrit par les débutants. Il permet de comprendre comment fonctionne l'affichage à l'écran.
+```C#
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+### Explication du code :
+- `using System;` : Indique que l'on utilise les fonctionnalités de base de C#
+- `class Program` : Définit une classe nommées `Program`. Les classes sont les structures de base en C#.
+- `static void Main(string[] args)` : La méthode `Main` est le point d'entrée du programme.
+- `Console.WriteLine("Hello, World !");` : Affiche le texte à l'écran. Console est une classe et WriteLine() une méthode appartenant à cette classe.
+
+## 4. Quelques bonnes pratiques pour débuter
+- Utiliser des noms de variables clairs et explicites : Cela rend le code plus facile à comprendre
+- Commenter le code : Ajouter des commentaires pour expliquer ce que fait le code.
+- Tester le code régulièrement ; Ne pas attendre d'avoir écrit tout le programme pour tester.
 
 
