@@ -61,7 +61,6 @@ for (int i = 0; i < 5; i++)
 {
     Console.WriteLine("Ceci est la répétition numéro " + i);
 }
-
 ```
 
 ## 3. Premier programme : "Hello, World !"
