@@ -39,7 +39,7 @@ double temperature = 18.5; // Variable de type décimale (double)
 Console.WriteLine("Bonjour Mathieu !"); // Affiche un message
 age = age + 1; // Incrémente la variable age de 1
 ```
-### Conditions `if/else`
+### Conditions if/else
 - Les conditions permettent de faire un choix dans le programme. On peut dire à l'ordinateur de faire une chose ou une autre selon la situation.
 ### Exemple en C# :
 ```C#
@@ -51,11 +51,12 @@ else // Dans le cas contraire, on affiche le message "Vous êtes mineur."
 {
     Console.WriteLine("Vous êtes mineur.");
 }
-
 ```
-### Boucles `(for, while, do while, etc.)`
+
+### Boucles (for, while, do while, etc.)
 - Les boucles permettent de répéter une série d'instructions plusieurs fois, ce qui est utile quand on doit exécuter la même tâche à plusieurs reprises.
 ### Exemple en C# :
+
 ```C#
 for (int i = 0; i < 5; i++)
 {
