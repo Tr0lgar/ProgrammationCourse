@@ -1,6 +1,9 @@
 # Sommaire
 1. [Qu'est-ce que la programmation ?](#quest-ce-que-la-programmation-)
 2. [Les concepts de base de la programmation](#les-concepts-de-base-de-la-programmation)
+   - [Variables et types de données](#variables-et-types-de-donnees)
+   - [Instructions et séquences](#instructions-et-sequences)
+   - [Conditions if/else](#conditions-if/else)
   
 ## 1. Qu'est-ce que la programmation ?
 Explication : La programmation, c'est l'art de donner des instructions à un ordinateur pour qu'il accomplisse des tâches. Cela se fait en écrivant du code dans un langage de programmation, qui est une sorte de langage spécial que les humains utilisent pour communiquer avec les machines. Quand on écrit un programme, on crée une suite d'instructions que l'ordinateur va suivre.
@@ -34,3 +37,37 @@ double temperature = 18.5; // Variable de type décimale (double)
 | `bool`          | 8                | `true` ou `false`                                | `true`                    |
 | `char`          | 16               | Caractères Unicode (0 à 65 535)                  | 'A'                       |
 | `string`        | Variable         | Séquence de caractères                           | "Bonjour, monde !"        |
+
+### Instructions et séquences
+- Un programme est composé d'instructions, et celles-ci sont exécutées les unes après les autres. Une instructions peut être une affectation de variable, un affichage, etc.
+### Exemple en C# :
+```C#
+Console.WriteLine("Bonjour Mathieu !"); // Affiche un message
+age = age + 1; // Incrémente la variable age de 1
+```
+### Conditions `if/else`
+- Les conditions permettent de faire un choix dans le programme. On peut dire à l'ordinateur de faire une chose ou une autre selon la situation.
+### Exemple en C# :
+```C#
+if (age >= 18) // Si la variable age est plus grande ou = à 18, on affiche le message "Vous êtes majeur."
+{
+    Console.WriteLine("Vous êtes majeur.");
+}
+else // Dans le cas contraire, on affiche le message "Vous êtes mineur."
+{
+    Console.WriteLine("Vous êtes mineur.");
+}
+
+```
+### Boucles `(for, while, do while, etc.)`
+- Les boucles permettent de répéter une série d'instructions plusieurs fois, ce qui est utile quand on doit exécuter la même tâche à plusieurs reprises.
+### Exemple en C# :
+```C#
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Ceci est la répétition numéro " + i);
+}
+
+```
+
+
