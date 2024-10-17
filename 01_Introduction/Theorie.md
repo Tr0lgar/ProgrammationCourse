@@ -1,9 +1,9 @@
 # Sommaire
 1. [Qu'est-ce que la programmation ?](#quest-ce-que-la-programmation-)
-2. [Les concepts de base de la programmation](#les-concepts-de-base-de-la-programmation)
-   - [Variables et types de données](#variables-et-types-de-donnees)
-   - [Instructions et séquences](#instructions-et-sequences)
-   - [Conditions if/else](#conditions-if/else)
+2. [Les concepts de base de la programmation](#les-concepts-de-base-de-la-programmation-)
+   - [Variables et types de données](#variables-et-types-de-donnees-)
+   - [Instructions et séquences](#instructions-et-sequences-)
+   - [Conditions if/else](#conditions-if/else-)
   
 ## 1. Qu'est-ce que la programmation ?
 Explication : La programmation, c'est l'art de donner des instructions à un ordinateur pour qu'il accomplisse des tâches. Cela se fait en écrivant du code dans un langage de programmation, qui est une sorte de langage spécial que les humains utilisent pour communiquer avec les machines. Quand on écrit un programme, on crée une suite d'instructions que l'ordinateur va suivre.
