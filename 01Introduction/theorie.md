@@ -8,7 +8,7 @@ Explication : La programmation, c'est l'art de donner des instructions à un ord
 - Une variable est un espace mémoire où l'on stocke des informations que le programme peut utiliser. chaque variable a un nom et un type de données (par exemple, un nombre, un texte, etc.)
 - Il y a plusieurs manières de nommer ses variables, mais la plus répendue est le camelCase : Cela consiste à écrire le premier mot du nom tout en minuscule et de coller et commencer les autres mots par une majuscule. Exemple : `maNouvelleVariable`
 ### Exemple en C# :
-```C#
+```csharp
 int age = 21; // Variable de type entier (int)
 string name = Mathieu; // Variable de type chaine de carctères (string)
 double temperature = 18.5; // Variable de type décimale (double)
@@ -35,14 +35,14 @@ double temperature = 18.5; // Variable de type décimale (double)
 ### Instructions et séquences
 - Un programme est composé d'instructions, et celles-ci sont exécutées les unes après les autres. Une instructions peut être une affectation de variable, un affichage, etc.
 ### Exemple en C# :
-```C#
+```csharp
 Console.WriteLine("Bonjour Mathieu !"); // Affiche un message
 age = age + 1; // Incrémente la variable age de 1
 ```
 ### Conditions if/else
 - Les conditions permettent de faire un choix dans le programme. On peut dire à l'ordinateur de faire une chose ou une autre selon la situation.
 ### Exemple en C# :
-```C#
+```csharp
 if (age >= 18) // Si la variable age est plus grande ou = à 18, on affiche le message "Vous êtes majeur."
 {
     Console.WriteLine("Vous êtes majeur.");
@@ -57,7 +57,7 @@ else // Dans le cas contraire, on affiche le message "Vous êtes mineur."
 - Les boucles permettent de répéter une série d'instructions plusieurs fois, ce qui est utile quand on doit exécuter la même tâche à plusieurs reprises.
 ### Exemple en C# :
 
-```C#
+```csharp
 for (int i = 0; i < 5; i++)
 {
     Console.WriteLine("Ceci est la répétition numéro " + i);
@@ -66,7 +66,7 @@ for (int i = 0; i < 5; i++)
 
 ## 3. Premier programme : "Hello, World !"
 Le programme "Hello, World !" est souvent le premier programme écrit par les débutants. Il permet de comprendre comment fonctionne l'affichage à l'écran.
-```C#
+```csharp
 using System;
 
 class Program
