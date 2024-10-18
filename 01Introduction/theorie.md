@@ -62,6 +62,7 @@ for (int i = 0; i < 5; i++)
     Console.WriteLine("Ceci est la répétition numéro " + i);
 }
 ```
+- Question : Quel sera le dernier chiffre affiché ? Réponse : ||4||
 
 ## 3. Premier programme : "Hello, World !"
 Le programme "Hello, World !" est souvent le premier programme écrit par les débutants. Il permet de comprendre comment fonctionne l'affichage à l'écran.
