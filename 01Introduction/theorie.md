@@ -56,7 +56,6 @@ else // Dans le cas contraire, on affiche le message "Vous êtes mineur."
 ### Boucles (for, while, do while, etc.)
 - Les boucles permettent de répéter une série d'instructions plusieurs fois, ce qui est utile quand on doit exécuter la même tâche à plusieurs reprises.
 ### Exemple en C# :
-
 ```csharp
 for (int i = 0; i < 5; i++)
 {
