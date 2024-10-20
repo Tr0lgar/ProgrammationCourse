@@ -1,4 +1,8 @@
 # Approfondissement des concepts de base
+## Sommaire
+- [1. Variables et Opérateurs](#1-variables-et-operateurs)
+- [2. Conditions (if/else, switch)](2-conditions-if-else-switch)
+
 ## 1. Variables et Opérateurs
 Les variables sont utilisées pour stocker des données et les manipuler. Nous allons approfondir les différents types de variables et les opérateurs couramment utilisés.
 ### Types de Variables
@@ -139,7 +143,7 @@ for (int i = 1; i <= 5; i++)
 Ce code génère un triangle de charactères `*`.
 
 ## 4. Exercices Pratiques :
-### Exercice 1 : Calcumer la somme des n premiers nombres
+### Exercice 1 : Calculer la somme des n premiers nombres
 ```csharp
 using System;
 
