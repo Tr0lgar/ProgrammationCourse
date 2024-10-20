@@ -67,4 +67,5 @@ else
     Console.WriteLine("Vous êtes mineur.");
 }
 ```
-
+### Structure `switch`
+La structure `switch` est une alternative aux instructions `if/else` lorsque l'on doit comparer une même variable à plusieurs valeurs.
