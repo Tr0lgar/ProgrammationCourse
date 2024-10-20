@@ -37,7 +37,34 @@ bool estEgal = (x == y); // false
 bool estPlusGrand = (x > y); // false
 ```
 #### 3. Opérateurs logiques :
-- `` :
-- `` :
-- `` :
+- `&&` : AND logique
+- `||` : OR logique
+- `!` : NOT logique
+```csharp
+bool a = true;
+bool b = false;
+bool resultat = a && b; // false
+bool inversion = !a; // false
+```
+
+## 2. Conditions (if/else, switch)
+Les structures conditionnelles permettent d'exécuter du code différemment en fonction de certaines conditions.
+### Structure `if/else`
+La structure `if/else` permet de prendre des décision en fonction de l'évaluation d'une expression booléenne.
+```csharp
+int age = 20;
+
+if (age >= 18)
+{
+    Console.WriteLine("Vous êtes majeur.");
+}
+else if (age == 17)
+{
+    Console.WriteLine("Vous serez majeur l'année prochaine.");
+}
+else
+{
+    Console.WriteLine("Vous êtes mineur.");
+}
+```
 
