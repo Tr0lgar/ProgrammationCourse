@@ -1,9 +1,9 @@
 # Approfondissement des concepts de base
 ## Sommaire
-- [1. Variables et Opérateurs](#1-variables-et-operateurs)
-- [2. Conditions (if/else, switch)](#2-conditions-if-else-switch)
-- [3. Boucles (`for`, `while`, `do while`)](#3-boucle-for-while-do-while)
-- [4. Exercices pratiques](#4-exercices-pratiques)
+- [1. Variables et Opérateurs](#1-variables-et-opérateurs)
+- [2. Conditions (if/else, switch)](#2-conditions-ifelse-switch)
+- [3. Boucles (for, while, do while)](#3-boucles-for-while-do-while)
+- [4. Exercices pratiques](#4-exercices-pratiques-)
 
 ## 1. Variables et Opérateurs
 Les variables sont utilisées pour stocker des données et les manipuler. Nous allons approfondir les différents types de variables et les opérateurs couramment utilisés.
@@ -104,7 +104,7 @@ switch (grade)
         break;
 }
 ```
-## 3. Boucles (`for`, `while`, `do while`)
+## 3. Boucles (for, while, do while)
 Les boucles permettent de répéter des instructions. Les boucles imbriquées et les conditions complexes permettent de créer des logiques plus sophistiquées.
 ### Boucle `for`
 La boucle `for` est souvent utilisée lorsque le nombre d'itérations est connu à l'avance.
