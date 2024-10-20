@@ -24,6 +24,7 @@ Les opérateurs permettent de manipuler les variables de différentes manières.
 - `*` : Multiplication
 - `/` : Division
 - `%` : Modulo (reste de la division)
+
 ```csharp
 int a = 10;
 int b = 3;
@@ -39,6 +40,7 @@ int reste = a % b; // 1
 - `<` : Inférieur
 - `>=` : Supérieur ou égal
 - `<=` : Inférieur ou égal
+
 ```csharp
 int x = 5;
 int y = 10;
@@ -50,6 +52,7 @@ bool estPlusGrand = (x > y); // false
 - `&&` : AND logique
 - `||` : OR logique
 - `!` : NOT logique
+
 ```csharp
 bool a = true;
 bool b = false;
