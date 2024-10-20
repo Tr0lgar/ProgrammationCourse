@@ -23,3 +23,21 @@ int somme = a + b; // 13
 int produit = a * b; // 30
 int reste = a % b; // 1
 ```
+#### 2. Opérateurs de comparaison :
+- `==` : Égalité
+- `!=` : Différent
+- `>` : Supérieur
+- `<` : Inférieur
+- `>=` : Supérieur ou égal
+- `<=` : Inférieur ou égal
+```csharp
+int x = 5;
+int y = 10;
+bool estEgal = (x == y); // false
+bool estPlusGrand = (x > y); // false
+```
+#### 3. Opérateurs logiques :
+- `` :
+- `` :
+- `` :
+
