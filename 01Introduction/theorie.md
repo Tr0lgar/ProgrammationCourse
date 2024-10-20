@@ -171,7 +171,7 @@ class Program
 ```
 ### Indices :
 - Quelle boucle ? Tu ne connais pas le nombre d'itérations dont tu as besoin, ce n'est donc pas une boucle `for`. Fais le bon choix entre `while` et `do while` ;).
-- Stocke l'entrée utilisateur dans une variable `string` et transforme-là en utilisant `int32.Parse()`.
+- Stocke l'entrée utilisateur dans une variable `string` et transforme-là en utilisant `int32.Parse()` (idéalement ce serait mieux d'utiliser int.TryParse(), pour pouvoir vérifier si l'entrée est valide ou pas).
 - Pour vérifier si le nombre deviné est plus grand ou plus petit que le nombre secret, utilise une condition `if/else`.
 - N'oublie pas d'incrémenter (+1) la variable `nombreEssais` à chaque tentative.
 
