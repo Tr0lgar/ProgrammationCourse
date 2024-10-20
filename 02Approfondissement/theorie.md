@@ -15,7 +15,7 @@ Les variables peuvent stocker différents types de données. Voici un rappel des
 - `bool` : Valeur booléenne (true ou false)
 - `char` : Caractère unique (ex. 'A')
 - `string` : Chaîne de caractères (ex. "Bonjour")
-- 
+
 ### Opérateurs
 Les opérateurs permettent de manipuler les variables de différentes manières. Voici les catégories principales d'opérateurs :
 #### Opérateurs arithmétiques :
