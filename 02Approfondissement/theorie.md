@@ -7,6 +7,7 @@
 
 ## 1. Variables et Opérateurs
 Les variables sont utilisées pour stocker des données et les manipuler. Nous allons approfondir les différents types de variables et les opérateurs couramment utilisés.
+
 ### Types de Variables
 Les variables peuvent stocker différents types de données. Voici un rappel des types de données les plus courants :
 - `int` : Nombre entier (ex. 42)
@@ -14,6 +15,7 @@ Les variables peuvent stocker différents types de données. Voici un rappel des
 - `bool` : Valeur booléenne (true ou false)
 - `char` : Caractère unique (ex. 'A')
 - `string` : Chaîne de caractères (ex. "Bonjour")
+- 
 ### Opérateurs
 Les opérateurs permettent de manipuler les variables de différentes manières. Voici les catégories principales d'opérateurs :
 #### Opérateurs arithmétiques :
@@ -29,6 +31,7 @@ int somme = a + b; // 13
 int produit = a * b; // 30
 int reste = a % b; // 1
 ```
+
 #### Opérateurs de comparaison :
 - `==` : Égalité
 - `!=` : Différent
@@ -42,6 +45,7 @@ int y = 10;
 bool estEgal = (x == y); // false
 bool estPlusGrand = (x > y); // false
 ```
+
 #### Opérateurs logiques :
 - `&&` : AND logique
 - `||` : OR logique
