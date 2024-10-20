@@ -195,3 +195,51 @@ class Program
 #### Explications : 
 - **Boucle `do while`** : permet de garantir que l'utilisateur saisit au moins un nombre. Si la saisie n'est pas valide (pas un entier ou un entier non positif), la boucle continue.
 - **Validation de l'entrée** : La vérification se fait avec `inc.TryParse` pour essayer de convertir la saisie en entier (`n`), puis on vérifie que `n > 0`. Si les deux condition sont remplies, on sort de la boucle avec `break;`.
+
+### Exercice 2 : Trouve la couleur
+```csharp
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Crée un tableau de couleurs
+        string[] couleurs = { "rouge", "bleu", "vert", "jaune" };
+
+        // Génère un indice aléatoire pour choisir une couleur
+        Random rand = new Random();
+        int indiceCouleur = rand.Next(0, couleurs.Length);
+        string couleurSecrete = couleurs[indiceCouleur];
+
+        Console.WriteLine("Devinez la couleur (rouge, bleu, vert, jaune) :");
+        string reponseUtilisateur = Console.ReadLine();
+
+        // À toi de compléter : Compare la réponse de l'utilisateur avec la couleur secrète
+        // Utilise StringComparison.OrdinalIgnoreCase pour ignorer la casse (majuscules/minuscules)
+        // Par exemple : "Rouge" et "rouge" seront considérés comme identiques
+        // (Voir explications supplémentaires plus bas)
+
+        // Syntaxe : if (string.Equals(reponseUtilisateur, couleurSecrete, StringComparison.OrdinalIgnoreCase))
+        // Cela permet de comparer les deux chaînes de caractères sans tenir compte des majuscules et minuscules
+
+        // Si l'utilisateur a trouvé, affiche un message de félicitations
+        // Sinon, indique que ce n'est pas la bonne couleur
+
+        // Astuce : Pour donner plusieurs chances à l'utilisateur de deviner, utilise une boucle do while
+        // Continue à demander tant que l'utilisateur n'a pas trouvé la bonne couleur
+    }
+}
+```
+#### Explications supplémentaires :
+- **StringComparison.OrdinalIgnoreCase** :  Cet argument est utilisé pour comparer deux chaînes de caractères en ignorant la casse, c'est-à-dire que "Rouge" et "rouge" seront considérés comme identiques. La comparaison devient donc insensible aux majuscules et minuscules. Voici un exemple de son utilisation :
+
+```csharp
+if (string.Equals("Rouge", "rouge", StringComparison.OrdinalIgnoreCase))
+{
+    Console.WriteLine("Les deux chaînes sont identiques !");
+}
+```
+Dans cet exemple, le programme considère que "Rouge" et "rouge" sont égaux grâce à `StringComparison.OrdinalIgnoreCase`.
+
+- **Boucle `do while`** : Tu peux entourer la saisie de l'utilisateur et la vérification de la réponse avec une boucle `do while` pour que le programme continue à demander une réponse tant que l'utilisateur n'a pas trouvé la bonne couleur. Cela permet de répéter les essais jusqu'à ce que la couleur correcte soit devinée.
