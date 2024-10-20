@@ -91,9 +91,9 @@ switch (grade)
         break;
 }
 ```
-### Boucles (`for`, `while`, `do while`)
+## 3. Boucles (`for`, `while`, `do while`)
 Les boucles permettent de répéter des instructions. Les boucles imbriquées et les conditions complexes permettent de créer des logiques plus sophistiquées.
-#### Boucle `for`
+### Boucle `for`
 La boucle `for` est souvent utilisée lorsque le nombre d'itérations est connu à l'avance.
 ```csharp
 for (int i = 0; i < 5; i++)
@@ -101,7 +101,7 @@ for (int i = 0; i < 5; i++)
     Console.WriteLine("Itération : " + i);
 }
 ```
-#### Boucle `while`
+### Boucle `while`
 La boucle `while` s'exécute tant que la condition est vraie.
 ```csharp
 int compteur = 0;
@@ -112,7 +112,7 @@ while (compteur < 5)
     compteur++;
 }
 ```
-#### Boucle `do while`
+### Boucle `do while`
 La boucle `do while` s'exécute au moins une fois, car la condition est vérifiée après l'exécution du bloc.
 ```csharp
 int compteur = 0;
@@ -123,3 +123,62 @@ do
     compteur++;
 } while (compteur < 5);
 ```
+
+### Boucles Imbriquées et Conditions Complexes 
+Les boucles imbriquées permettent d'exécuter une boucle à l'inérieur d'une autre boucle.
+```csharp
+for (int i = 1; i <= 5; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+```
+Ce code génère un triangle de charactères `*`.
+
+## 4. Exercices Pratiques :
+### Exercice 1 : Calcumer la somme des n premiers nombres
+```csharp
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n; // Variable pour stocker le nombre saisi par l'utilisateur
+
+        // Boucle do while pour demander un entier positif tant que l'entrée n'est pas valide
+        do
+        {
+            Console.WriteLine("Entrez un nombre entier positif :");
+            string saisie = Console.ReadLine();
+
+            // Vérifie si la saisie est bien un entier et si cet entier est positif
+            if (int.TryParse(saisie, out n) && n > 0)
+            {
+                // Si la saisie est correcte, on sort de la boucle
+                break;
+            }
+            else
+            {
+                // Message d'erreur si l'entrée n'est pas un entier positif
+                Console.WriteLine("Erreur : Veuillez entrer un nombre entier positif.");
+            }
+        } while (true); // La boucle continue tant que l'utilisateur n'a pas saisi un entier positif
+
+        // Crée une variable pour stocker la somme
+        int somme = 0;
+
+        // À toi de compléter : Utilise une boucle pour additionner les nombres de 1 à n
+        // ...
+
+        // Affiche le résultat (à faire après avoir calculé la somme)
+        Console.WriteLine("La somme des " + n + " premiers nombres est : " + somme);
+    }
+}
+```
+#### Explications : 
+- **Boucle `do while`** : permet de garantir que l'utilisateur saisit au moins un nombre. Si la saisie n'est pas valide (pas un entier ou un entier non positif), la boucle continue.
+- **Validation de l'entrée** : La vérification se fait avec `inc.TryParse` pour essayer de convertir la saisie en entier (`n`), puis on vérifie que `n > 0`. Si les deux condition sont remplies, on sort de la boucle avec `break;`.
