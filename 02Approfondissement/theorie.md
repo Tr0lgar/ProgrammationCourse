@@ -10,7 +10,7 @@ Les variables peuvent stocker différents types de données. Voici un rappel des
 - `string` : Chaîne de caractères (ex. "Bonjour")
 ### Opérateurs
 Les opérateurs permettent de manipuler les variables de différentes manières. Voici les catégories principales d'opérateurs :
-#### 1. Opérateurs arithmétiques :
+#### Opérateurs arithmétiques :
 - `+` : Addition
 - `-` : Soustraction
 - `*` : Multiplication
@@ -23,7 +23,7 @@ int somme = a + b; // 13
 int produit = a * b; // 30
 int reste = a % b; // 1
 ```
-#### 2. Opérateurs de comparaison :
+#### Opérateurs de comparaison :
 - `==` : Égalité
 - `!=` : Différent
 - `>` : Supérieur
@@ -36,7 +36,7 @@ int y = 10;
 bool estEgal = (x == y); // false
 bool estPlusGrand = (x > y); // false
 ```
-#### 3. Opérateurs logiques :
+#### Opérateurs logiques :
 - `&&` : AND logique
 - `||` : OR logique
 - `!` : NOT logique
@@ -69,3 +69,57 @@ else
 ```
 ### Structure `switch`
 La structure `switch` est une alternative aux instructions `if/else` lorsque l'on doit comparer une même variable à plusieurs valeurs.
+```csharp
+char grade = 'B';
+
+switch (grade)
+{
+    case 'A':
+        Console.WriteLine("Excellent !");
+        break; // Super impotant, ne pas oublier le break;
+    case 'B':
+        Console.WriteLine("Très bien !");
+        break;
+    case 'C':
+        Console.WriteLine("Bien.");
+        break;
+    case 'D':
+        Console.WriteLine("Passable.");
+        break;
+    default:
+        Console.WriteLine("Échec.");
+        break;
+}
+```
+### Boucles (`for`, `while`, `do while`)
+Les boucles permettent de répéter des instructions. Les boucles imbriquées et les conditions complexes permettent de créer des logiques plus sophistiquées.
+#### Boucle `for`
+La boucle `for` est souvent utilisée lorsque le nombre d'itérations est connu à l'avance.
+```csharp
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Itération : " + i);
+}
+```
+#### Boucle `while`
+La boucle `while` s'exécute tant que la condition est vraie.
+```csharp
+int compteur = 0;
+
+while (compteur < 5)
+{
+    Console.WriteLine("Compteur : " + compteur);
+    compteur++;
+}
+```
+#### Boucle `do while`
+La boucle `do while` s'exécute au moins une fois, car la condition est vérifiée après l'exécution du bloc.
+```csharp
+int compteur = 0;
+
+do
+{
+    Console.WriteLine("Compteur : " + compteur);
+    compteur++;
+} while (compteur < 5);
+```
