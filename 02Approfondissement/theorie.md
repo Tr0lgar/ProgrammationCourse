@@ -1,7 +1,8 @@
 # Approfondissement des concepts de base
 ## Sommaire
 - [1. Variables et Opérateurs](#1-variables-et-operateurs)
-- [2. Conditions (if/else, switch)](2-conditions-if-else-switch)
+- [2. Conditions (if/else, switch)](#2-conditions-if-else-switch)
+- [3. Boucles (`for`, `while`, `do while`)](#3-boucle-for-while-do-while)
 
 ## 1. Variables et Opérateurs
 Les variables sont utilisées pour stocker des données et les manipuler. Nous allons approfondir les différents types de variables et les opérateurs couramment utilisés.
