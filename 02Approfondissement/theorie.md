@@ -243,3 +243,7 @@ if (string.Equals("Rouge", "rouge", StringComparison.OrdinalIgnoreCase))
 Dans cet exemple, le programme considère que "Rouge" et "rouge" sont égaux grâce à `StringComparison.OrdinalIgnoreCase`.
 
 - **Boucle `do while`** : Tu peux entourer la saisie de l'utilisateur et la vérification de la réponse avec une boucle `do while` pour que le programme continue à demander une réponse tant que l'utilisateur n'a pas trouvé la bonne couleur. Cela permet de répéter les essais jusqu'à ce que la couleur correcte soit devinée.
+
+### Solutions :
+- [Télécharger la solution de l'exercice 1](somme.cs)
+- [Télécharger la solution de l'exercice 2](devineLaCouleur.cs)
