@@ -18,6 +18,7 @@ Explication : La programmation, c'est l'art de donner des instructions à un ord
 ### Variables et types de données
 - Une variable est un espace mémoire où l'on stocke des informations que le programme peut utiliser. chaque variable a un nom et un type de données (par exemple, un nombre, un texte, etc.)
 - Il y a plusieurs manières de nommer ses variables, mais la plus répendue est le camelCase : Cela consiste à écrire le premier mot du nom tout en minuscule et de coller et commencer les autres mots par une majuscule. Exemple : `maNouvelleVariable`
+
 ### Exemple en C# :
 ```csharp
 int age = 21; // Variable de type entier (int)
@@ -47,6 +48,7 @@ double temperature = 18.5; // Variable de type décimale (double)
 
 ### Instructions et séquences
 - Un programme est composé d'instructions, et celles-ci sont exécutées les unes après les autres. Une instructions peut être une affectation de variable, un affichage, etc.
+
 ### Exemple en C# :
 ```csharp
 Console.WriteLine("Bonjour Mathieu !"); // Affiche un message
@@ -54,6 +56,7 @@ age = age + 1; // Incrémente la variable age de 1
 ```
 ### Conditions if/else
 - Les conditions permettent de faire un choix dans le programme. On peut dire à l'ordinateur de faire une chose ou une autre selon la situation.
+
 ### Exemple en C# :
 ```csharp
 if (age >= 18) // Si la variable age est plus grande ou = à 18, on affiche le message "Vous êtes majeur."
@@ -68,6 +71,7 @@ else // Dans le cas contraire, on affiche le message "Vous êtes mineur."
 
 ### Boucles (for, while, do while, etc.)
 - Les boucles permettent de répéter une série d'instructions plusieurs fois, ce qui est utile quand on doit exécuter la même tâche à plusieurs reprises.
+
 ### Exemple de boucle `for` en C# :
 Une boucle `for` est utile quand on sait à l'avance combien de fois on veut répéter une action. Voici un exemple :
 ```csharp
@@ -90,6 +94,7 @@ while (compteur < 5)
 ```
 Dans cet exemple, la boucle s'exécute tant que la variable `compteur` est inférieure à 5. À chaque itération, le programme affiche le message, puis incrémente la valeur de `compteur` de 1.
 - **Question** : Que se passe-t-il si la variable `compteur` est initialisée à 5 au lieu de 0 ? *(vérifie ta réponse en copiant et en exécutant le code sur ton ordi)*
+
 ### Exemple de boucle `do while` en C# :
 La boucle `do while` est similaire à la boucle `while`, mais avec une différence importante : le corps de la boucle est exécuté au moins une fois, quelle que soit la condition, car la condition est vérifiée après l'exécution du corps.
 Voici un exemple :
@@ -103,6 +108,7 @@ do
 ```
 Dans cet exemple, la boucle `do while` exécute d'abord le corps de la boucle (affiche le message et incrémente le compteur), puis vérifie la condition `compteur < 5`. Tant que cette condition est vraie, la boucle continue de s'exécuter.
 - **Question** : Que se passe-t-il si la variable `compteur` est initialisée à 5 avant la boucle `do while` ? Combien de fois le message sera-t-il affiché ? *(vérifie ta réponse en copiant et en exécutant le code sur ton ordi)*
+
 ### Différence entre `while` et `do while` :
 - Boucle `while` :  La condition est vérifiée avant l'exécution du corps de la boucle. Si la condition est fausse dès le départ, le corps de la boucle ne sera jamais exécuté.
 - Boucle `do while` : Le corps de la boucle est exécuté au moins une fois, car la condition est vérifiée après l'exécution du corps.
