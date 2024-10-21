@@ -1,14 +1,30 @@
 # Introduction à la programmation (C#)
 ## Sommaire :
-- [1. Qu'est-ce que la programmation ?](#1-quest-ce-que-la-programmation-)
-- [2. Les concepts de base de la programmation](#2-les-concepts-de-base-de-la-programmation)
-  - [2.1. Variables et types de données](#variables-et-types-de-données)
-  - [2.2. Instructions et séquences](#instructions-et-séquences)
-  - [2.3. Conditions if/else](#conditions-ifelse)
-  - [2.4. Boucles (for, while, do while, etc.)](#boucles-for-while-do-while-etc)
-- [3. Premier programme : "Hello, World !"](#3-premier-programme--hello-world-)
-- [4. Quelques bonnes pratiques pour débuter](#4-quelques-bonnes-pratiques-pour-débuter)
-- [5. Exercice : Crée un jeu "Devine le nombre"](#5-exercice--crée-un-jeu-devine-le-nombre)
+- [Introduction à la programmation (C#)](#introduction-à-la-programmation-c)
+  - [Sommaire :](#sommaire-)
+  - [1. Qu'est-ce que la programmation ?](#1-quest-ce-que-la-programmation-)
+    - [Exemple simple :](#exemple-simple-)
+  - [2. Les concepts de base de la programmation](#2-les-concepts-de-base-de-la-programmation)
+    - [Variables et types de données](#variables-et-types-de-données)
+    - [Exemple en C# :](#exemple-en-c-)
+    - [Instructions et séquences](#instructions-et-séquences)
+    - [Exemple en C# :](#exemple-en-c--1)
+    - [Conditions if/else](#conditions-ifelse)
+    - [Exemple en C# :](#exemple-en-c--2)
+    - [Boucles (for, while, do while, etc.)](#boucles-for-while-do-while-etc)
+    - [Exemple de boucle `for` en C# :](#exemple-de-boucle-for-en-c-)
+    - [Exemple de boucle `while` en C# :](#exemple-de-boucle-while-en-c-)
+    - [Exemple de boucle `do while` en C# :](#exemple-de-boucle-do-while-en-c-)
+    - [Différence entre `while` et `do while` :](#différence-entre-while-et-do-while-)
+  - [3. Premier programme : "Hello, World !"](#3-premier-programme--hello-world-)
+    - [Explication du code :](#explication-du-code-)
+  - [4. Quelques bonnes pratiques pour débuter](#4-quelques-bonnes-pratiques-pour-débuter)
+  - [5. Exercice : Crée un jeu "Devine le nombre"](#5-exercice--crée-un-jeu-devine-le-nombre)
+    - [Enoncé :](#enoncé-)
+    - [Instructions :](#instructions-)
+    - [Code de départ :](#code-de-départ-)
+    - [Indices :](#indices-)
+    - [Solution :](#solution-)
 ## 1. Qu'est-ce que la programmation ?
 Explication : La programmation, c'est l'art de donner des instructions à un ordinateur pour qu'il accomplisse des tâches. Cela se fait en écrivant du code dans un langage de programmation, qui est une sorte de langage spécial que les humains utilisent pour communiquer avec les machines. Quand on écrit un programme, on crée une suite d'instructions que l'ordinateur va suivre.
 ### Exemple simple :
@@ -181,5 +197,5 @@ class Program
 - Pour vérifier si le nombre deviné est plus grand ou plus petit que le nombre secret, utilise une condition `if/else`.
 - N'oublie pas d'incrémenter (+1) la variable `nombreEssais` à chaque tentative.
 
-
-
+### Solution :
+[Télécharger la solution .cs](devineLeNombre.cs)
