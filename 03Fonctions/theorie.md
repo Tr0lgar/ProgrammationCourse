@@ -2,12 +2,12 @@
 
 ## Sommaire
 - [1. Introduction aux Fonctions](#1-introduction-aux-fonctions)
-- [2. Déclaration d'une Fonction](#2-declaration-dune-fonction)
+- [2. Déclaration d'une Fonction](#2-déclaration-dune-fonction)
 - [3. Appel d'une fonction](#3-appel-dune-fonction)
 - [4. Les Fonctions avec un type de retour void](#4-les-fonctions-avec-un-type-de-retour-void)
-- [5. Différences entre Paramètres et Arguments](#5-differences-entre-parametres-et-arguments)
+- [5. Différences entre Paramètres et Arguments](#5-différences-entre-paramètres-et-arguments)
 - [6. Les Fonctions surchargées](#6-les-fonctions-surchargees)
-- [7. Exercice récapitulatif](7#-exercice-recapitulatif)
+- [7. Exercice récapitulatif](7#-exercice-récapitulatif)
 
 ## 1. Introduction aux Fonctions
 Les **fonctions** (ou **Méthodes**, ça signifie la même chose) sont des blocs de code réutilisables qui accomplissent une tâche spécifique. On peut les comparer à des *"recettes de cuisine"* :une fois que la recette est définie, on peut la réutiliser autant de fois qu'on le souhaite sans devoir la réécrire à chaque fois.
