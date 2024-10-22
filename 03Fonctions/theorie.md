@@ -7,7 +7,7 @@
 - [4. Les fonctions avec un type de retour `void`](#4-les-fonctions-avec-un-type-de-retour-void)
 - [5. Différence entre Paramètres et Arguments](#5-différence-entre-paramètres-et-arguments)
 - [6. Les Fonctions surchargées](#6-les-fonctions-surchargées)
-- [7.Exercice récapitulatif](#7exercice-récapitulatif)
+- [7. Exercice récapitulatif](#7-exercice-récapitulatif)
 
 ## 1. Introduction aux Fonctions
 Les **fonctions** (ou **Méthodes**, ça signifie la même chose) sont des blocs de code réutilisables qui accomplissent une tâche spécifique. On peut les comparer à des *"recettes de cuisine"* :une fois que la recette est définie, on peut la réutiliser autant de fois qu'on le souhaite sans devoir la réécrire à chaque fois.
@@ -90,7 +90,7 @@ int somme1 = Addition(2, 3);      // Appelle la première fonction
 int somme2 = Addition(2, 3, 4);   // Appelle la seconde fonction
 ```
 
-## 7.Exercice récapitulatif
+## 7. Exercice récapitulatif
 ### Enoncé :
 Dans cet exercice, vous allez créer un petit programme de calculatrice qui permet à l'utilisateur d'effectuer des opérations de base : addition, soustraction, multiplication et division. Chaque opération sera implémentée sous forme de fonction.
 Modifiez le code en réalisant les tâches marquées d'un `TODO`
@@ -132,7 +132,7 @@ Menu :
 Choisissez une option : 5
 Au revoir !
 ```
-### Code de départ:
+### Code de départ :
 ```csharp
 using System;
 
