@@ -1,2 +1,3 @@
 - [Introduction](01Introduction/theorie.md)
 - [Approfondissement](02Approfondissement/theorie.md)
+- [Les Fonction](03Fonctions/theorie.md)
