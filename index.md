@@ -1,4 +1,5 @@
 - [Introduction](01Introduction/theorie.md)
 - [Approfondissement](02Approfondissement/theorie.md)
 - [Les Fonction](03Fonctions/theorie.md)
-- [Les tableaux](04Tableaux/theorie.m)
+- [Les Tableaux](04Tableaux/theorie.m)
+- [Les Collections](05Collections/theorie.md)
