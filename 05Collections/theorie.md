@@ -161,5 +161,48 @@ class Program
 - Les listes offrent des **méthodes pratiques** pour ajouter, supprimer et rechercher des éléments.
 - Les listes sont plus adaptées lorsque vous avez besoin d'une structure de données dont la taille peut varier.
 
+### Exercice de manipulation des List
+#### Énoncé :
+Dans cet exercice, tu vas créer un programme qui va gérer une liste de fruits. Le programme doit permettre à l'utilisateur d'ajouter des fruits, d'en supprimer, de consulter la liste, de rechercher un fruit dans laliste et de supprimer la liste entière.
+
+Le programme doit fonctionner en boucle pour que l'utilisateur puisse choisir les différentes options autant de fois qu'il le souhaite, jusqu'à ce qu'il décide de quitter.
+
+#### Instructions :
+- Utilise une liste de chaînes de caractères pour stocker les fruits.
+- Utilise le menu pour permettre à l'utilisateur de choisir l'une des options.
+- La recherche des fruits doit être insensible à la casse (c-à-d que "Pomme" et "pomme" sont considérés comme identiques).
+
+#### Code de départ :
+```csharp
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // TODO: Initialiser une liste de string vide
+
+        bool continuer = true; // A utiliser pour la boucle
+        string choice ; // A utiliser pour stocker le choix de l'utilisateur
+
+        // TODO: Englober tout le processus dans une boucle et commencer par afficher le menu
+    }
+
+    // Affiche le menu
+    private static void showMenu()
+    {
+        Console.WriteLine("\nMenu");
+        Console.WriteLine("1. Ajouter un fruit");
+        Console.WriteLine("2. Supprimer un fruit");
+        Console.WriteLine("3. Afficher la liste");
+        Console.WriteLine("4. Rechercher un fruit");
+        Console.WriteLine("5. Supprimer toute la liste"); // Renseigne-toi sur une méthode existante qui permet de vider une liste ;)
+        Console.WriteLine("6. Sortir");
+    }
+}
+```
+#### Solution :
+[Télécharger la solution](fruits.cs)
+
 ## 4. *Suite*
 *Le contenu de cette page peut être potentiellement modifié pour faire le focus d'autres collections*

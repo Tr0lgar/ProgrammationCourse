@@ -3,7 +3,6 @@ C:\Users\mathi\Documents\ProgrammationCourse\Console\bin\Debug\net6.0\Console.de
 C:\Users\mathi\Documents\ProgrammationCourse\Console\bin\Debug\net6.0\Console.runtimeconfig.json
 C:\Users\mathi\Documents\ProgrammationCourse\Console\bin\Debug\net6.0\Console.dll
 C:\Users\mathi\Documents\ProgrammationCourse\Console\bin\Debug\net6.0\Console.pdb
-C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\Console.csproj.AssemblyReference.cache
 C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\Console.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\Console.AssemblyInfoInputs.cache
 C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\Console.AssemblyInfo.cs
@@ -13,3 +12,4 @@ C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\refint\Con
 C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\Console.pdb
 C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\Console.genruntimeconfig.cache
 C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\ref\Console.dll
+C:\Users\mathi\Documents\ProgrammationCourse\Console\obj\Debug\net6.0\Console.sourcelink.json
