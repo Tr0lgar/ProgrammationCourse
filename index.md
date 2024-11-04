@@ -3,3 +3,4 @@
 - [Les Fonction](03Fonctions/theorie.md)
 - [Les Tableaux](04Tableaux/theorie.m)
 - [Les Collections](05Collections/theorie.md)
+- [Les Exceptions](06Exceptions/theorie.md)
