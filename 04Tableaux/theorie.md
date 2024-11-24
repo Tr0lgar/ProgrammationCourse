@@ -13,7 +13,7 @@
 
 ## 1. Introduction
 Un **tableau** est une structure de données qui permet de stocker une collection de valeurs du même type. On peut le voir comme une **boite à compartiments**, où chaque compartiment contient un élément de la même nature (par exemple une série de chiffres, de mots, etc.).
-Imagniez une étagère avec des cases numérotées. Chaque case peut contenir un objet, comme un livre. Si l'étagère peut contenir 10 livres, chaque case (numérotée de 0 à 9) correspond à un emplacement où un livre (une valeur) peut être stocké.
+Imaginez une étagère avec des cases numérotées. Chaque case peut contenir un objet, comme un livre. Si l'étagère peut contenir 10 livres, chaque case (numérotée de 0 à 9) correspond à un emplacement où un livre (une valeur) peut être stocké.
 Dans un tableau, chaque emplacement s'appelle un **indice**.
 
 ## 2. Déclaration d'un Tableau
@@ -36,7 +36,7 @@ int[] nombres = { 2, 4, 6, 8, 10 };
 ```
 
 ## 4. Accès aux Éléments d'un Tableau
-Les éléments d'un tableau sont accessibles via leur **indice**. En C#, comme beaucoups d'autres langages comme Java, les indices commencent toujours à 0. Le premier élément est donc à l'indice `0`, le deuxième à l'indice `1`, et ainsi de suite.
+Les éléments d'un tableau sont accessibles via leur **indice**. En C#, comme beaucoup d'autres langages comme Java, les indices commencent toujours à 0. Le premier élément est donc à l'indice `0`, le deuxième à l'indice `1`, et ainsi de suite.
 ```csharp
 int premierNombre = nombres[0]; // Accède au premier élément (valeur : 2)
 nombres[2] = 12; // Modifie le troisième élément (6 devient 12)
@@ -55,7 +55,7 @@ for (int i = 0; i < nombres.Length; i++)
 - `nombre.Length` : renvoie la taille du tableau (le nombre d'éléments)
 - La boucle parcourt le tableau en utilisant l'indice `i`, qui va de `0` à `nombre.Length - 1`.
 
-## 6. Tableaux Multidiensionnels
+## 6. Tableaux Multidimensionnels
 Un **tableau multidimensionnel** est un tableau contenant d'autres tableaux. Il est utilisé pour stocker des données sous forme de grille, comme un **tableau à deux dimensions** (tableau de tableaux).
 
 ### Tableau à deux dimensions

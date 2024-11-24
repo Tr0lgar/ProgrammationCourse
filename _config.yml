@@ -1,1 +1,6 @@
-theme: minima
+title: "Cours de C#"
+description: "Un cours pour apprendre le C# pour débutants"
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+markdown: kramdown
