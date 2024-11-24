@@ -1,14 +1,1 @@
-title: "Cours de C#"
-description: "Un cours pour apprendre le C# pour débutants"
 theme: minima
-plugins:
-  - jekyll-include-cache
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "page"
-    values:
-      layout: "default"
-      css: "assets/css/style.css"
