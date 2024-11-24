@@ -2,10 +2,6 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
----
-layout: default
-title: "Introduction"
-
 # Introduction à la programmation (C#)
 ## Sommaire :
 - [1. Qu'est-ce que la programmation ?](#1-quest-ce-que-la-programmation-)

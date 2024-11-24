@@ -2,10 +2,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
----
-layout: default
-title: "Accueil"
-
 - [Introduction](01Introduction/theorie.md)
 - [Approfondissement](02Approfondissement/theorie.md)
 - [Les Fonction](03Fonctions/theorie.md)
