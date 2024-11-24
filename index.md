@@ -1,7 +1,3 @@
-<head>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
 - [Introduction](01Introduction/theorie.md)
 - [Approfondissement](02Approfondissement/theorie.md)
 - [Les Fonction](03Fonctions/theorie.md)
