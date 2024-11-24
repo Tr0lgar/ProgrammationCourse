@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
 ---
 layout: default
 title: "Introduction"
