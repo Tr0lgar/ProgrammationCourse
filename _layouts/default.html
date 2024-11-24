@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/">Accueil</a>
-        <a href="/chapitre1/">Chapitre 1</a>
-        <a href="/chapitre2/">Chapitre 2</a>
-    </nav>
-    <div class="container">
+    <header>
+        <nav>
+            <div>
+                <a href="/">Accueil</a>
+                <a href="/chapitre1/">Chapitre 1</a>
+                <a href="/chapitre2/">Chapitre 2</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
         {{ content }}
-    </div>
+    </main>
     <footer>
-        <p>© {{ site.title }}</p>
+        © 2024 {{ site.title }}. Tous droits réservés.
     </footer>
 </body>
 </html>

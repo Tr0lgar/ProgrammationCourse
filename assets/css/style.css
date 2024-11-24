@@ -1,26 +1,22 @@
-/* Variables de couleur pour light/dark mode */
+/* Variables principales */
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --link-color: #0078d7;
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --link-color: #1a73e8;
+    --nav-bg-color: #0078d7;
+    --nav-text-color: white;
+    --card-bg-color: white;
+    --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color: #121212;
-        --text-color: #ffffff;
-        --link-color: #3ea6ff;
-    }
-}
-
-/* Styles généraux */
+/* Styles globaux */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background-color: var(--bg-color);
     color: var(--text-color);
+    line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -33,19 +29,66 @@ a:hover {
     text-decoration: underline;
 }
 
-nav {
-    background: var(--link-color);
-    color: white;
-    padding: 10px;
+/* En-tête */
+header {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    color: white;
-    margin-right: 15px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+header nav a {
+    color: var(--nav-text-color);
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Contenu principal */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 900px;
+    margin: 100px auto 20px auto;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+}
+
+/* Titres */
+h1, h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Cartes pour les chapitres */
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
     padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px var(--card-shadow);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
