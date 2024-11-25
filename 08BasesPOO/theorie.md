@@ -48,7 +48,7 @@ public class Voiture
     public string Couleur; // La couleur de la voiture
 
     // Méthodes (ou comportements)
-    public void Accelérer()
+    public void Accelerer()
     {
         Console.WriteLine("La voiture accélère !");
     }
@@ -89,7 +89,7 @@ class Program
 
         // Utilisation des méthodes
         Console.WriteLine($"Ma voiture est une {maVoiture.Marque} {maVoiture.Modele} de couleur {maVoiture.Couleur}.");
-        maVoiture.Accelérer();
+        maVoiture.Accelerer();
         maVoiture.Freiner();
         maVoiture.Exploser();
     }
