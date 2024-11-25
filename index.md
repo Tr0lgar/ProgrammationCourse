@@ -13,7 +13,7 @@
 
 <hr>
 
-## 3. [Les Fonction](03Fonctions/theorie.md)
+## 3. [Les Fonctions](03Fonctions/theorie.md)
 ⚙️ Apprenez comment organiser votre code avec des fonctions : comment les écrire, les appeler, et pourquoi elles sont indispensables à un programme bien structuré.
 
 <hr>

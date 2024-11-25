@@ -8,6 +8,8 @@
 - [5. Comparaisons pratiques et analogies](#5-comparaisons-pratiques-et-analogies)
 - [6. Résumé](#6-résumé)
 
+<hr>
+
 ## 1. Qu’est-ce que la Programmation Orientée Objet ?
 La **programmation orientée objet (POO)** est un paradigme de programmation qui organise le code autour de "**choses**" appelées **objets**, plutôt que de simples fonctions et données. Ces objets représentent des éléments du monde réel ou abstrait, comme une voiture, une banque, un utilisateur, ou même une idée.  
 **Exemple simple :**  
@@ -79,8 +81,7 @@ Classe : Animal
 - Attributs : (...)
 - Méthodes : respirer(), manger()
 
-Class : Chien
-hérite de Animal
+Class : Chien hérite de Animal
 - Attributs : race, couleur, taille (+ attributs de Animal)
 - Méthodes : aboyer() (+ méthodes de Animal)
 ```
