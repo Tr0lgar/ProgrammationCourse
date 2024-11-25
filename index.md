@@ -38,4 +38,9 @@
 
 <hr>
 
+## 8. [Premiers pas pratiques en POO](08BasesPOO/theorie.md)
+🐾 Passez de la théorie à la pratique en découvrant comment créer vos premières classes et objets. Apprenez à définir des attributs, utiliser des constructeurs, et écrire des méthodes interactives en C#. Ce cours inclut un exercice pour appliquer vos connaissances ! 
+
+<hr>
+
 #### 💡 Conseil : Naviguez dans l'ordre ou explorez directement les sections qui vous intéressent. Bon apprentissage !
