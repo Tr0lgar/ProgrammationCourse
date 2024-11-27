@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Cours de Programmation</title>
     <link rel="stylesheet" href="{{ '/assets/css/custom-theme.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     {% assign sorted_pages = site.pages | where_exp:"page", "page.url contains '/cours/'" | sort: "order" %}
