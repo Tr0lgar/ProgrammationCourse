@@ -16,12 +16,13 @@ body {
 .index {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1em;
     max-width: 50%;
     min-height: 100vh;
     background: linear-gradient(to right, #ece9e6, #ffffff);
     margin: 0 25%;
+    overflow-y: auto;
 }
 
 .index .content {
