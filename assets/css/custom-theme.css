@@ -4,7 +4,6 @@
 }
 
 body {
-    display: flex;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
@@ -13,27 +12,6 @@ body {
     background-color: #f4f4f4;
     overflow-x: hidden;
     height: 100vh;
-}
-
-/* Appliqué uniquement si la page est l'index */
-body.index-page {
-    display: block; /* Permet de réinitialiser le flex si nécessaire */
-}
-
-body.index-page .content {
-    margin: 0 auto;
-    max-width: 800px; /* Pour centrer le contenu avec une largeur limitée */
-    padding: 2rem;
-}
-
-body.index-page h1, 
-body.index-page h2, 
-body.index-page p {
-    text-align: left; /* Eviter des centrages ou décalages étranges */
-}
-
-body.index-page ul {
-    padding-left: 2rem;
 }
 
 /* Sidebar with Glass Effect */
