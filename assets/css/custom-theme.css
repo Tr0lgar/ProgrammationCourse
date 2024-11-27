@@ -16,16 +16,18 @@ body {
     color: #333;
     background-color: #f4f4f4;
     max-width: 100%;
-    overflow-x: hidden;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .sidebar {
     width: 20%;
     min-width: 200px;
     background-color: #f1f1f1;
-    height: 100vh;
+    height: 100%;
     padding: 1.25rem;
     box-shadow: 0.125rem 0 0.3125rem rgba(0,0,0,0.1);
+    overflow-y: auto;
   }
 
   .sidebar h2 {
@@ -61,8 +63,13 @@ body {
     color: white;
   }
 
-  .content {
+  .content-wrapper {
     flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .content {
     padding: 1.25rem;
   }
 
@@ -76,6 +83,7 @@ body {
   @media (max-width: 768px) {
     .wrapper {
       flex-direction: column;
+      height: auto;
     }
 
     .sidebar {
@@ -85,7 +93,7 @@ body {
       min-width: auto;
     }
 
-    .content {
-      margin-left: 0;
+    .content-wrapper {
+      height: auto;
     }
   }
