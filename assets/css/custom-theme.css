@@ -19,7 +19,7 @@ body {
     flex-direction: column;
 }
 
-.index body {
+.index {
     pad: 1em;
     max-width: 50%;
 }
