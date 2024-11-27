@@ -43,7 +43,7 @@
 
 <hr>
 
-### 9. [Encapsulation](09Encapsulation/theorie.md)
+## 9. [Encapsulation](09Encapsulation/theorie.md)
 🔒 Apprenez comment protéger les données de vos classes grâce à l'encapsulation. Découvrez l'importance de l'accès contrôlé aux attributs et comment manipuler des données de manière sécurisée avec des propriétés et des méthodes.
 
 <hr>
