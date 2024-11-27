@@ -21,7 +21,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(to right, #ece9e6, #ffffff);
-    margin: 0;
+    margin: 0 25%;
 }
 
 .index .content {
