@@ -1,33 +1,30 @@
-/* Custom GitHub Pages Markdown Theme */
-
-/* Base Typography and Layout */
 body {
     display: flex;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #f4f4f4;
 }
 
 .sidebar {
-    width: 250px;
+    width: 15.625rem;
     background-color: #f1f1f1;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     overflow-y: auto;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    padding: 1.25rem;
+    box-shadow: 0.125rem 0 0.3125rem rgba(0,0,0,0.1);
 }
 
 .sidebar h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    border-bottom: 0.125rem solid #333;
+    padding-bottom: 0.625rem;
+    margin-bottom: 0.9375rem;
 }
 
 .sidebar ul {
@@ -36,15 +33,15 @@ body {
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
     display: block;
-    padding: 8px 15px;
-    border-radius: 4px;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 0.25rem;
     transition: background-color 0.3s;
 }
 
@@ -58,8 +55,8 @@ body {
 }
 
 .content {
-    margin-left: 250px;
-    padding: 20px;
+    margin-left: 15.625rem;
+    padding: 1.25rem;
     flex-grow: 1;
 }
 
@@ -80,13 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.5em;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 0.125rem solid #e0e0e0;
     padding-bottom: 0.3em;
 }
 
 h2 {
     font-size: 2em;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 0.0625rem solid #e0e0e0;
 }
 
 h3 { font-size: 1.5em; }
@@ -112,9 +109,9 @@ a:hover {
 /* Code Blocks */
 pre {
     background-color: #f8f8f8;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 15px;
+    border: 0.0625rem solid #e0e0e0;
+    border-radius: 0.25rem;
+    padding: 0.9375rem;
     overflow-x: auto;
 }
 
@@ -122,7 +119,7 @@ code {
     font-family: 'Fira Code', 'Cascadia Code', Menlo, Consolas, 'Courier New', monospace;
     background-color: #f1f1f1;
     padding: 0.2em 0.4em;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     font-size: 0.9em;
 }
 
@@ -134,7 +131,7 @@ pre code {
 
 /* Blockquotes */
 blockquote {
-    border-left: 4px solid #3498db;
+    border-left: 0.25rem solid #3498db;
     margin: 1.5em 0;
     padding-left: 1em;
     font-style: italic;
@@ -143,7 +140,7 @@ blockquote {
 
 /* Lists */
 ul, ol {
-    padding-left: 30px;
+    padding-left: 1.875rem;
     margin: 1em 0;
 }
 
@@ -159,8 +156,8 @@ table {
 }
 
 th, td {
-    border: 1px solid #e0e0e0;
-    padding: 10px;
+    border: 0.0625rem solid #e0e0e0;
+    padding: 0.625rem;
     text-align: left;
 }
 
@@ -170,12 +167,21 @@ th {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     body {
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     h1 { font-size: 2em; }
     h2 { font-size: 1.6em; }
     h3 { font-size: 1.3em; }
+
+    .sidebar {
+        width: 15rem;
+    }
+
+    .content {
+        margin-left: 15rem;
+        padding: 1.25rem;
+    }
 }
