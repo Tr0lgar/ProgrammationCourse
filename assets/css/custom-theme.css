@@ -11,14 +11,14 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     overflow-x: hidden;
-    height: 100vh;
 }
 
 .index {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    padding: 1em;
+    max-width: 50%;
     min-height: 100vh;
     background: linear-gradient(to right, #ece9e6, #ffffff);
     margin: 0 25%;
@@ -33,11 +33,6 @@ body {
     border-radius: 12px;
     border: 1px solid #ddd;
     box-sizing: border-box;
-}
-
-.index {
-    padding: 1em;
-    max-width: 50%;
 }
 
 /* Sidebar with Glass Effect */
