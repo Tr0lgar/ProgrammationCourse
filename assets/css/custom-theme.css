@@ -17,10 +17,21 @@ body {
 .index {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.index .content {
+    width: 50%; /* Utilise environ la moitié de la page */
+    max-width: 800px; /* Limite la largeur pour les écrans plus larges */
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #fff; /* Optionnel : pour distinguer du fond */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optionnel : ajout d'une ombre pour moderniser */
+    border-radius: 8px; /* Ajoute un léger arrondi */
 }
 
 .index {
-    pad: 1em;
+    padding: 1em;
     max-width: 50%;
 }
 
@@ -221,6 +232,11 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .index .content {
+        width: 90%; /* Utilise presque toute la largeur sur petit écran */
+        padding: 1rem;
+    }
+
     .sidebar {
         width: 12rem;
         position: absolute;
