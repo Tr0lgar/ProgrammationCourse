@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Fonctions
+order: 3  # Ordre de tri
+---
+
 # Les Fonctions (ou Méthodes)
 
 ## Sommaire
@@ -224,4 +230,4 @@ class Program
 }
 ```
 ### Solution
-[Télécharger la solution](calculatrice.cs)
+[Télécharger la solution](../solutions/calculatrice.cs)

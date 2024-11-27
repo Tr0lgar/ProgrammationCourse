@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Bases POO
+order: 8  # Ordre de tri
+---
+
 # Les bases de la POO
 Dans ce cours, nous allons traduire les concepts abstraits de la programmation orientée objet (POO) en code concret en utilisant le langage C#. Tu vas apprendre à créer des classes et des objets, et à comprendre leur rôle dans la construction de programmes modulaires, robustes et évolutifs.
 
@@ -186,7 +192,7 @@ Les méthodes d'objet ne servent pas uniquement à faire faire une "action" à l
 Tu peux comparer une méthode d'objet à une fonction (comme par exemple `Additionner(n1, n2)`) mais qui est propre à l'objet.
 
 ### Solution
-[Télécharger la solution](animal.cs)
+[Télécharger la solution](../solutions/animal.cs)
 
 <br>
 

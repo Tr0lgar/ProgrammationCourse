@@ -3,47 +3,47 @@
 <hr>
 
 ## Sommaire
-## 1. [Introduction](01Introduction/theorie.md)
+## 1. [Introduction](cours/01Introduction.md)
 📘 Découvrez les bases de la programmation, les concepts fondamentaux, et pourquoi il est important d'apprendre à coder.
 
 <hr>
 
-## 2. [Approfondissement](02Approfondissement/theorie.md)
+## 2. [Approfondissement](cours/02Approfondissement.md)
 🔍 Plongez plus profondément dans les concepts intermédiaires pour maîtriser des sujets essentiels à tout programmeur.
 
 <hr>
 
-## 3. [Les Fonctions](03Fonctions/theorie.md)
+## 3. [Les Fonctions](cours/03Fonctions.md)
 ⚙️ Apprenez comment organiser votre code avec des fonctions : comment les écrire, les appeler, et pourquoi elles sont indispensables à un programme bien structuré.
 
 <hr>
 
-## 4. [Les Tableaux](04Tableaux/theorie.m)
+## 4. [Les Tableaux](cours/04Tableaux.md)
 📊 Explorez les tableaux, ces outils pratiques pour manipuler des collections d'éléments, et apprenez à les déclarer, les parcourir et les utiliser efficacement.
 
 <hr>
 
-## 5. [Les Collections](05Collections/theorie.md)
+## 5. [Les Collections](cours/05Collections.md)
 📚 Découvrez les collections, une version plus flexible et puissante des tableaux, pour manipuler des ensembles de données dynamiques comme des listes, des dictionnaires, et bien plus.
 
 <hr>
 
-## 6. [Les Exceptions](06Exceptions/theorie.md)
+## 6. [Les Exceptions](cours/06Exceptions.md)
 🚨 Maîtrisez l’art de gérer les erreurs dans vos programmes avec les exceptions. Apprenez à détecter, capturer, et réagir aux problèmes pour rendre votre code plus robuste.
 
 <hr>
 
-## 7. [Intro POO](07IntoPOO/theorie.md)
+## 7. [Intro POO](cours/07IntroPoo.md)
 🧩 Entrez dans le monde fascinant de la programmation orientée objet. Apprenez les concepts fondamentaux comme les objets, les classes, et les piliers de la POO à travers des exemples concrets et des analogies claires.
 
 <hr>
 
-## 8. [Premiers pas pratiques en POO](08BasesPOO/theorie.md)
+## 8. [Premiers pas pratiques en POO](cours/08BasesPOO.md)
 🐾 Passez de la théorie à la pratique en découvrant comment créer vos premières classes et objets. Apprenez à définir des attributs, utiliser des constructeurs, et écrire des méthodes interactives en C#.
 
 <hr>
 
-## 9. [Encapsulation](09Encapsulation/theorie.md)
+## 9. [Encapsulation](cours/09Encapsulation.md)
 🔒 Apprenez comment protéger les données de vos classes grâce à l'encapsulation. Découvrez l'importance de l'accès contrôlé aux attributs et comment manipuler des données de manière sécurisée avec des propriétés et des méthodes.
 
 <hr>

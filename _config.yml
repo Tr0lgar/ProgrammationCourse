@@ -1,1 +1,5 @@
-theme: minima
+defaults:
+  - scope:
+      path: "cours"
+    values:
+      layout: cours

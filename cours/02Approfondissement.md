@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Approfondissement
+order: 2  # Ordre de tri
+---
+
 # Approfondissement des concepts de base
 ## Sommaire
 - [1. Variables et Opérateurs](#1-variables-et-opérateurs)
@@ -245,5 +251,5 @@ Dans cet exemple, le programme considère que "Rouge" et "rouge" sont égaux gr�
 - **Boucle `do while`** : Tu peux entourer la saisie de l'utilisateur et la vérification de la réponse avec une boucle `do while` pour que le programme continue à demander une réponse tant que l'utilisateur n'a pas trouvé la bonne couleur. Cela permet de répéter les essais jusqu'à ce que la couleur correcte soit devinée.
 
 ### Solutions :
-- [Télécharger la solution de l'exercice 1](somme.cs)
-- [Télécharger la solution de l'exercice 2](devineLaCouleur.cs)
+- [Télécharger la solution de l'exercice 1](../solutions/somme.cs)
+- [Télécharger la solution de l'exercice 2](../solutions/devineLaCouleur.cs)

@@ -1,3 +1,8 @@
+---
+layout: cours
+title: Introduction
+order: 1  # Ordre de tri
+---
 # Introduction à la programmation (C#)
 ## Sommaire :
 - [1. Qu'est-ce que la programmation ?](#1-quest-ce-que-la-programmation-)
@@ -184,4 +189,4 @@ class Program
 - N'oublie pas d'incrémenter (+1) la variable `nombreEssais` à chaque tentative.
 
 ### Solution :
-[Télécharger la solution .cs](devineLeNombre.cs)
+[Télécharger la solution .cs](../solutions/devineLeNombre.cs)

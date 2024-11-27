@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Collections
+order: 5  # Ordre de tri
+---
+
 # Les Collections
 
 ## Sommaire : 
@@ -202,7 +208,7 @@ class Program
 }
 ```
 #### Solution :
-[Télécharger la solution](fruits.cs)
+[Télécharger la solution](../solutions/fruits.cs)
 
 ## 4. *Suite*
 *Le contenu de cette page peut être potentiellement modifié pour faire le focus d'autres collections*

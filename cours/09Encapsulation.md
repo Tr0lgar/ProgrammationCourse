@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Encapsulation
+order: 9  # Ordre de tri
+---
+
 # Encapsulation
 **Précision avant de commencer :**
 Dans ce cours, **pour des raisons de simplicité**, nous allons écrire **les classes et le programme principal (`Main`) dans le même fichier**. Cependant, dans un contexte professionnel ou pour des projets plus complexes, il est recommandé de **séparer chaque classe dans des fichiers distincts** afin de rendre le code plus clair, plus maintenable, et faciliter sa réutilisation. Cela vous permettra aussi de mieux organiser votre projet et de collaborer efficacement en équipe.
@@ -189,4 +195,4 @@ Créer une classe `CompteBancaire` avec les attributs privés suivants :
 4. Ajoutez une méthode `Deposer` et une méthode `Retirer` qui respectent cette règle.
 
 ### Solution :  
-[Télécharger la solution](banque.cs)
+[Télécharger la solution](../solutions/banque.cs)

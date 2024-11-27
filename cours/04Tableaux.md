@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Tableaux
+order: 4  # Ordre de tri
+---
+
 # Les Tableaux
 
 ## Sommaire
@@ -164,4 +170,4 @@ class Program
 - **Tableau 5x5** : Commence par initialiser ton tableau 2D, et initialise une variable compteur à 1. Ensuite, parcours ton tableau 2D (qui dit 2 dimensions dit boucles imbriquées) et donne la valeur de ton compteur à `tableau[i][j]`. N'oublie pas d'incrémenter ton compteur juste après.
 
 ### Solution
-[Télécharger la solution](exTableau.cs)
+[Télécharger la solution](../solutions/exTableau.cs)

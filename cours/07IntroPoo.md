@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Intro POO
+order: 7  # Ordre de tri
+---
+
 # Introduction à la Programmation Orientée Objet (POO)
 
 ## Sommaire

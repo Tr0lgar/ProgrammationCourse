@@ -1,3 +1,9 @@
+---
+layout: cours
+title: Exceptions
+order: 6  # Ordre de tri
+---
+
 # Gestion des Exceptions avec `try`...`catch`
 
 ## 1. Introduction aux Exceptions
@@ -197,4 +203,4 @@ class Program
 - **Ignorer la note si elle est hors de la plage 0-20**, mais sans arrêter le programme.
 
 ### Solution
-[Télécharger la solution](moyenne.cs)
+[Télécharger la solution](../solutions/moyenne.cs)
