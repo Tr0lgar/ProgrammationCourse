@@ -18,16 +18,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
 }
 
 .index .content {
-    width: 50%; /* Utilise environ la moitié de la page */
-    max-width: 800px; /* Limite la largeur pour les écrans plus larges */
+    width: 50%;
+    max-width: 800px;
     padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 1px solid #ddd;
     box-sizing: border-box;
-    background-color: #fff; /* Optionnel : pour distinguer du fond */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optionnel : ajout d'une ombre pour moderniser */
-    border-radius: 8px; /* Ajoute un léger arrondi */
 }
 
 .index {
