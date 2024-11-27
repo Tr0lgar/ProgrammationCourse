@@ -69,16 +69,16 @@
     </style>
 </head>
 <body>
-    {% assign sorted_pages = site.pages | where_exp: "page", "page.url contains 'cours/'" | sort: "order" %}
+    {% assign sorted_pages = site.pages | where_exp:"page", "page.url contains '/cours/'" | sort: "order" %}
 
     <nav class="sidebar">
         <h2>Plan du Cours</h2>
         <ul>
-            <li><a href="/index.md" class="home-link">Accueil</a></li>
+            <li><a href="{{ '/index.md' | relative_url }}" class="home-link">Accueil</a></li>
             {% for page in sorted_pages %}
                 <li>
-                    <a href="{{ page.url }}" 
-                    {% if page.url == current_page.url %}class="active"{% endif %}>
+                    <a href="{{ page.url | relative_url }}"
+                    {% if page.url == page.url %} class="active"{% endif %}>
                         {{ page.title }}
                     </a>
                 </li>
