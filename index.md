@@ -1,3 +1,7 @@
+---
+layout : default
+---
+
 ## Mon Index de Cours
 **Bienvenue dans votre guide de programmation ! Ce répertoire contient des cours structurés pour apprendre les bases et concepts avancés de la programmation, étape par étape.**
 <hr>
