@@ -1,6 +1,7 @@
-theme : minima
+markdown: kramdown
 defaults:
   - scope:
       path: "cours"
     values:
       layout: cours
+theme : minima
