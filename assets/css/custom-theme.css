@@ -139,27 +139,49 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Code Blocks */
+/* Style global pour les blocs de code */
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Style spécifique pour les blocs de code */
 pre {
-    background-color: #f8f8f8;
-    border: 0.0625rem solid #e0e0e0;
-    border-radius: 0.25rem;
-    padding: 0.9375rem;
-    overflow-x: auto;
+    background-color: #2e2e2e;
+    color: #dcdcdc; /* Couleur du texte par défaut */
+    overflow: auto;
 }
 
-code {
-    font-family: 'Fira Code', 'Cascadia Code', Menlo, Consolas, 'Courier New', monospace;
-    background-color: #f1f1f1;
-    padding: 0.2em 0.4em;
-    border-radius: 0.1875rem;
-    font-size: 0.9em;
+/* Si tu utilises Pygments, les classes pour la coloration sont générées automatiquement */
+.highlight .k {
+    color: #ff79c6;  /* Exemple pour un mot-clé, comme 'def' en Python */
 }
 
-pre code {
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
+.highlight .c {
+    color: #8a8a8a;  /* Couleur pour les commentaires */
+}
+
+.highlight .s {
+    color: #50fa7b;  /* Couleur pour les chaînes */
+}
+
+.highlight .n {
+    color: #f1fa8c;  /* Couleur pour les noms de variables */
+}
+
+.highlight .p {
+    color: #f8f8f2;  /* Couleur pour les délimiteurs, comme les parenthèses */
+}
+
+/* Autres éléments comme les nombres, les fonctions, etc. */
+.highlight .o {
+    color: #bd93f9; /* Opérateurs */
+}
+
+.highlight .m {
+    color: #ffb86c;  /* Numéros et valeurs numériques */
 }
 
 /* Blockquotes */
