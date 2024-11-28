@@ -316,5 +316,10 @@ button:hover {
 
     .content {
         margin-left: 0;
+        width: 100%;
+    }
+
+    .index {
+        min-width: 100%;
     }
 }
