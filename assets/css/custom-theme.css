@@ -90,7 +90,7 @@ body {
 
 .home-link {
     background-color: #2ecc71;
-    color: white !important;
+    color: #19ef7282 !important;
     font-weight: bold;
 }
 
@@ -149,18 +149,18 @@ pre, code {
 
 /* Style spécifique pour les blocs de code */
 pre {
-    background-color: #2e2e2e;
+    background-color: #424242;
     color: #dcdcdc; /* Couleur du texte par défaut */
     overflow: auto;
 }
 
 /* Si tu utilises Pygments, les classes pour la coloration sont générées automatiquement */
 .highlight .k {
-    color: #ff79c6;  /* Exemple pour un mot-clé, comme 'def' en Python */
+    color: #ff7979;  /* Exemple pour un mot-clé, comme 'def' en Python */
 }
 
 .highlight .c {
-    color: #8a8a8a;  /* Couleur pour les commentaires */
+    color: #6b6a6a;  /* Couleur pour les commentaires */
 }
 
 .highlight .s {
@@ -256,7 +256,7 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .index .content {
-        width: 90%; /* Utilise presque toute la largeur sur petit écran */
+        width: 95%; /* Utilise presque toute la largeur sur petit écran */
         padding: 1rem;
     }
 
