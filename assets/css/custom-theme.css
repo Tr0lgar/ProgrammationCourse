@@ -246,6 +246,15 @@ button:hover {
     cursor: pointer;
     width: 2rem;
     height: 2rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond semi-transparent */
+    backdrop-filter: blur(8px); /* Effet de flou */
+    border-radius: 8px; /* Coins arrondis pour un aspect moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.burger-menu:hover {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .burger-menu span {
