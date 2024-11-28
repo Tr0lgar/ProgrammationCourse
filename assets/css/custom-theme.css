@@ -47,7 +47,7 @@ body {
     padding: 1.25rem;
     box-shadow: 0.125rem 0 0.3125rem rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
