@@ -282,7 +282,25 @@ button:hover {
     transform: translateX(100%);
 }
 
-/* Adapter la disposition */
+/* Sidebar visible sur grands écrans */
+@media (min-width: 769px) {
+    .sidebar {
+        transform: translateX(0); /* La sidebar reste visible */
+        position: fixed;
+        width: 15.625rem;
+    }
+
+    .menu-toggle, .burger-menu {
+        display: none; /* Masquer le menu burger */
+    }
+
+    .content {
+        margin-left: calc(15.625rem + 1.25rem);
+        max-width: calc(100% - 15.625rem - 2.5rem);
+    }
+}
+
+/* Sidebar cachée sur petits écrans */
 @media (max-width: 768px) {
     .burger-menu {
         display: block;
@@ -290,6 +308,11 @@ button:hover {
 
     .sidebar {
         width: 100%;
+        transform: translateX(-100%);
+    }
+
+    .menu-toggle:checked ~ .sidebar {
+        transform: translateX(0);
     }
 
     .content {
