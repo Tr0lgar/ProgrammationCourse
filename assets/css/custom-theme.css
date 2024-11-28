@@ -244,13 +244,16 @@ button:hover {
     left: 1rem;
     z-index: 1000;
     cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    background-color: rgba(255, 255, 255, 0.5); /* Fond semi-transparent */
-    backdrop-filter: blur(8px); /* Effet de flou */
-    border-radius: 8px; /* Coins arrondis pour un aspect moderne */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease-in-out;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .burger-menu:hover {
