@@ -159,7 +159,7 @@ pre {
     color: #ff7979;  /* Exemple pour un mot-clé, comme 'def' en Python */
 }
 
-.highlight .c {
+.highlight .c, .highlight .c1 {
     color: #6b6a6a;  /* Couleur pour les commentaires */
 }
 
