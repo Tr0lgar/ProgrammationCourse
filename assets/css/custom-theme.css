@@ -273,7 +273,6 @@ button:hover {
 /* Sidebar fermée par défaut */
 .sidebar {
     position: fixed;
-    left: -100%;
     transition: transform 0.3s ease-in-out;
 }
 
