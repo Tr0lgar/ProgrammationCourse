@@ -36,7 +36,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Sidebar with Glass Effect */
+/* Sidebar */
 .sidebar {
     width: 15.625rem;
     height: 100vh;
@@ -46,10 +46,11 @@ body {
     overflow-y: auto;
     padding: 1.25rem;
     box-shadow: 0.125rem 0 0.3125rem rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.7); /* Glass effect background */
-    backdrop-filter: blur(10px); /* Blur effect */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
 }
 
 .sidebar h2 {
@@ -88,13 +89,7 @@ body {
     color: white;
 }
 
-.home-link {
-    background-color: #2ecc71;
-    color: #19ef7282 !important;
-    font-weight: bold;
-}
-
-/* Content Styling */
+/* Content */
 .content {
     margin-left: calc(15.625rem + 1.25rem);
     padding: 1.25rem;
@@ -139,7 +134,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Style global pour les blocs de code */
+/* Code Blocks */
 pre, code {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
@@ -147,41 +142,38 @@ pre, code {
     border-radius: 8px;
 }
 
-/* Style spécifique pour les blocs de code */
 pre {
     background-color: #424242;
-    color: #dcdcdc; /* Couleur du texte par défaut */
+    color: #dcdcdc;
     overflow: auto;
 }
 
-/* Si tu utilises Pygments, les classes pour la coloration sont générées automatiquement */
 .highlight .k {
-    color: #ff7979;  /* Exemple pour un mot-clé, comme 'def' en Python */
+    color: #ff7979;
 }
 
 .highlight .c, .highlight .c1 {
-    color: #6b6a6a;  /* Couleur pour les commentaires */
+    color: #7f7e7e;
 }
 
 .highlight .s {
-    color: #50fa7b;  /* Couleur pour les chaînes */
+    color: #50fa7b;
 }
 
 .highlight .n {
-    color: #f1fa8c;  /* Couleur pour les noms de variables */
+    color: #f1fa8c;
 }
 
 .highlight .p {
-    color: #f8f8f2;  /* Couleur pour les délimiteurs, comme les parenthèses */
+    color: #f8f8f2;
 }
 
-/* Autres éléments comme les nombres, les fonctions, etc. */
 .highlight .o {
-    color: #bd93f9; /* Opérateurs */
+    color: #bd93f9;
 }
 
 .highlight .m {
-    color: #ffb86c;  /* Numéros et valeurs numériques */
+    color: #ffb86c;
 }
 
 /* Blockquotes */
@@ -237,42 +229,70 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* Sidebar Animation */
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+/* Responsive Menu Burger */
+
+/* Cacher la checkbox */
+.menu-toggle {
+    display: none;
 }
 
+/* Burger menu */
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+.burger-menu span {
+    display: block;
+    background-color: #333;
+    height: 0.25rem;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:checked + .burger-menu span:nth-child(1) {
+    transform: translateY(0.7rem) rotate(45deg);
+}
+
+.menu-toggle:checked + .burger-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .burger-menu span:nth-child(3) {
+    transform: translateY(-0.7rem) rotate(-45deg);
+}
+
+/* Sidebar fermée par défaut */
 .sidebar {
-    animation: slideIn 0.5s ease-in-out forwards;
+    position: fixed;
+    left: -100%;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Responsive Design */
+/* Sidebar ouverte si case cochée */
+.menu-toggle:checked ~ .sidebar {
+    transform: translateX(100%);
+}
+
+/* Adapter la disposition */
 @media (max-width: 768px) {
-    .index .content {
-        width: 95%; /* Utilise presque toute la largeur sur petit écran */
-        padding: 1rem;
+    .burger-menu {
+        display: block;
     }
 
     .sidebar {
-        width: 12rem;
-        position: absolute;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .sidebar.open {
-        transform: translateX(0);
+        width: 100%;
     }
 
     .content {
         margin-left: 0;
-        max-width: 100%;
     }
 }

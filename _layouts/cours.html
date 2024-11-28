@@ -7,6 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
     {% assign sorted_pages = site.pages | where_exp:"page", "page.url contains '/cours/'" | sort: "order" %}
     <nav class="sidebar">
         <h2>Plan du Cours</h2>
