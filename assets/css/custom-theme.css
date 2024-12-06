@@ -176,7 +176,7 @@ pre {
     color: #ffb86c;
 }
 
-.highlighter-rouge {
+code.language-plaintext.highlighter-rouge {
     background-color: #a3a3a3;
 }
 
