@@ -176,6 +176,10 @@ pre {
     color: #ffb86c;
 }
 
+.highlighter-rouge {
+    background-color: #a3a3a3;
+}
+
 /* Blockquotes */
 blockquote {
     border-left: 0.25rem solid #3498db;
