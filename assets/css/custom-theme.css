@@ -177,7 +177,9 @@ pre {
 }
 
 code.language-plaintext.highlighter-rouge {
-    background-color: #a3a3a3;
+    padding: 0.25rem;
+    border-radius: 0;
+    background-color: #a3a3a330;
 }
 
 /* Blockquotes */
