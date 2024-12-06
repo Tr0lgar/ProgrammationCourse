@@ -143,29 +143,29 @@ pre, code {
 }
 
 pre {
-    background-color: #424242;
-    color: #dcdcdc;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
     overflow: auto;
 }
 
 .highlight .k {
-    color: #ff7979;
+    color: #f38ba8;
 }
 
 .highlight .c, .highlight .c1 {
-    color: #7f7e7e;
+    color: #6c7086;
 }
 
 .highlight .s {
-    color: #50fa7b;
+    color: #a6e3a1;
 }
 
 .highlight .n {
-    color: #f1fa8c;
+    color: #89b4fa;
 }
 
 .highlight .p {
-    color: #f8f8f2;
+    color: #cdd6f4;
 }
 
 .highlight .o {
@@ -173,7 +173,7 @@ pre {
 }
 
 .highlight .m {
-    color: #ffb86c;
+    color: #fab387;
 }
 
 code.language-plaintext.highlighter-rouge {
