@@ -9,7 +9,13 @@ order: 10  # Ordre de tri
 Dans ce cours, **pour des raisons de simplicité**, nous allons écrire **les classes et le programme principal (`Main`) dans le même fichier**. Cependant, dans un contexte professionnel ou pour des projets plus complexes, il est recommandé de **séparer chaque classe dans des fichiers distincts** afin de rendre le code plus clair, plus maintenable, et faciliter sa réutilisation. Cela vous permettra aussi de mieux organiser votre projet et de collaborer efficacement en équipe.
 
 ## Sommaire
-
+- [1. Introduction à l'Héritage](#1-introduction-à-lhéritage)
+- [2. Pourquoi utiliser l'Héritage ?](#2-pourquoi-utiliser-lhéritage-)
+- [3. Concepts clés](#3-concepts-clés)
+- [4. Héritage et Modificateurs d'accès](#4-héritage-et-modificateurs-daccès)
+- [5. Exemple concret](#5-exemple-concret)
+- [6. La surcharge de Méthodes (override)](#6-la-surcharge-de-méthodes-override)
+- [7. Exercice](#7-exercice)
 
 ---
 
@@ -91,6 +97,7 @@ Création d'une hiérarchisation de classes :
 1. Classe de base : **Vehicule**
 2. Classe dérivée : **Voiture**
 3. Classe dérivée : **Moto**
+
 ```csharp
 /*
 * Ici les 3 classes sont représentées dans le même fichier.
