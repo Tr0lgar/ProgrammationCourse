@@ -52,4 +52,9 @@ layout : default
 
 <hr>
 
+## 10. [Héritage](cours/10Heritage.md)
+👩‍👧‍👦 Plongez dans l’héritage, un concept clé de la POO. Découvrez comment créer des relations entre classes, réutiliser du code existant, et enrichir vos applications avec des hiérarchies logiques et extensibles.
+
+<hr>
+
 #### 💡 Conseil : Naviguez dans l'ordre ou explorez directement les sections qui vous intéressent. Bon apprentissage !
