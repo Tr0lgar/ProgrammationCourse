@@ -76,6 +76,7 @@ Les modificateurs d'accès définissent les membres accessibles dans les classes
 - **public** : Accessible partout.
 - **protected** : Accessible dans la classe de base et ses classes dérivées.
 - **private** : Accessible uniquement dans la classe où le membre est défini.
+
 ```csharp
 class Animal
 {
