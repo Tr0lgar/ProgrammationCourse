@@ -9,168 +9,200 @@ order: 10  # Ordre de tri
 Dans ce cours, **pour des raisons de simplicité**, nous allons écrire **les classes et le programme principal (`Main`) dans le même fichier**. Cependant, dans un contexte professionnel ou pour des projets plus complexes, il est recommandé de **séparer chaque classe dans des fichiers distincts** afin de rendre le code plus clair, plus maintenable, et faciliter sa réutilisation. Cela vous permettra aussi de mieux organiser votre projet et de collaborer efficacement en équipe.
 
 ## Sommaire
-- [1. Introduction à l'Héritage](#1-introduction-à-lhéritage)
-- [2. Pourquoi utiliser l'Héritage ?](#2-pourquoi-utiliser-lhéritage-)
-- [3. Concepts clés](#3-concepts-clés)
-- [4. Héritage et Modificateurs d'accès](#4-héritage-et-modificateurs-daccès)
-- [5. Exemple concret](#5-exemple-concret)
-- [6. La surcharge de Méthodes (override)](#6-la-surcharge-de-méthodes-override)
-- [7. Exercice](#7-exercice)
+1. [Introduction à l'héritage](#1️⃣-introduction-à-lhéritage)
+2. [Pourquoi utiliser l'héritage ?](#2️⃣-pourquoi-utiliser-lhéritage-)
+3. [Concepts clés](#3️⃣-concepts-clés)
+4. [Modificateurs d'accès et héritage](#4️⃣-modificateurs-daccès-et-héritage)
+5. [Opérateurs `is` et `as`](#5️⃣-opérateurs-is-et-as)
+6. [Exemple concret](#6️⃣-exemple-concret)
+7. [Exercice](#7️⃣-exercice)
 
 ---
 
-## 1. Introduction à l'Héritage
-L’héritage est l’un des concepts fondamentaux de la programmation orientée objet (POO). Il permet de créer des classes basées sur d’autres classes, en réutilisant les propriétés et méthodes existantes tout en y ajoutant des fonctionnalités supplémentaires.
+## 1️⃣ Introduction à l'Héritage
+L'héritage est l'un des concepts fondamentaux de la **programmation orientée objet (POO)**.  
+Il permet de **réutiliser le code** existant en créant de nouvelles classes qui héritent des membres (propriétés et méthodes) d'une classe parent.
 
-Imaginez une hiérarchie dans la vie réelle : une **voiture** est un type de **véhicule**, un **cercle** est une **forme géométrique**, ou encore un **chien** est un **animal**. En POO, l’héritage vous permet de représenter ces relations.
-
-<br>
-
-## 2. Pourquoi utiliser l'Héritage ?
-1. **Réutilisation du code** : Éviter de réécrire du code identique pour des classes qui peuvent avoir des comportements similaires.
-2. **Extension des fonctionnalités** : Ajouter ou modifier des comportements sans affecter la classe de base.
-3. **Hiérarchisation logique** : Modéliser des relations "est un(e) entre les classes. 
+La relation d'héritage est souvent appelée une relation **"est un(e)"**. Par exemple :
+- Un **étudiant** est une **personne**.
+- Une **voiture** est un **véhicule**.
+- Un **chien** est un **animal**.
 
 <br>
 
-## 3. Concepts clés
+## 2️⃣ Pourquoi utiliser l'Héritage ?
+1. **Réutilisation du code** : Ne pas réécrire ce qui existe déjà (principe DRY - Don't Repeat Yourself).  
+2. **Extensibilité** : Ajouter ou redéfinir des fonctionnalités sans modifier le code de la classe de base.  
+3. **Clarté et logique** : Structurer les classes de manière hiérarchique et intuitive.  
+4. **Polymorphisme** : Possibilité de manipuler des objets de différentes classes via le type de la classe de base.
+
+<br>
+
+## 3️⃣ Concepts clés
 ### Classe de base (Parent)
-Une classe qui fournit des propriétés et méthodes à d'autres classes.
+La classe de base est celle qui **fournit des propriétés et méthodes** à ses classes dérivées.
 #### Exemple :
 ```csharp
-class Animal
+class Personne
 {
     public string Nom { get; set; }
+    public string Prenom { get; set; }
 
-    public void Manger()
+    public void SePresenter()
     {
-        Console.WriteLine($"{Nom} est en train de manger.");
+        Console.WriteLine($"Je suis {Prenom} {Nom}.");
     }
 }
 ```
 ### Classe dérivée (Enfant)
-Une classe qui hérite de la classe de base. Elle possède les membres de la classe de base et peut ajouter ses propres membres ou remplacer ceux de la classe parent (surcharge).
+Une classe dérivée **hérite des membres publics et protégés** de la classe de base.  
+Elle peut également **ajouter ses propres propriétés ou méthodes**.
+
 #### Exemple :
 ```csharp
-class Chien : Animal // : Animal signifie "hérite de la classe Animal" et donc de ses comportements
+class Etudiant : Personne
 {
-    public void Aboyer()
+    public int Matricule { get; set; }
+
+    public void Etudier()
     {
-        Console.WriteLine($"{Nom} aboie !");
+        Console.WriteLine($"{Prenom} étudie avec le matricule {Matricule}.");
     }
 }
 ```
-### Accès aux membres de la class de base 
-Les classes dérivées peuvent utiliser les propriétés et méthodes publiques de la classe de base.
+
+### Comment instancier une classe dérivée ?
 ```csharp
-Chien monChien = new Chien();
-monChien.Nom = "Rex";
-monChien.Manger(); // Appelle une méthode de la classe Animal
-monChien.Aboyer(); // Appelle une méthode de la classe Chien
+Etudiant etu = new Etudiant();
+etu.Nom = "Dupont";
+etu.Prenom = "Alice";
+etu.Matricule = 12345;
+
+etu.SePresenter(); // Appelle la méthode de la classe parent
+etu.Etudier();     // Appelle la méthode de la classe enfant
 ```
-
-<br>
-
-## 4. Héritage et Modificateurs d'accès
-Les modificateurs d'accès définissent les membres accessibles dans les classes dérivées :
-- **public** : Accessible partout.
-- **protected** : Accessible dans la classe de base et ses classes dérivées.
-- **private** : Accessible uniquement dans la classe où le membre est défini.
-
-```csharp
-class Animal
-{
-    protected string Espece { get; set; }
-}
-class Chat : Animal
-{
-    public void AfficherEspece()
-    {
-        Console.WriteLine($"Ceci est un {Espece}.");
-    }
-}
+**Sortie** :
+```txt
+Je suis Alice Dupont.
+Alice étudie avec le matricule 12345.
 ```
 
 <br>
 
-## 5. Exemple concret
-Création d'une hiérarchisation de classes :
-1. Classe de base : **Vehicule**
-2. Classe dérivée : **Voiture**
-3. Classe dérivée : **Moto**
+## 4️⃣ Modificateurs d'accès et héritage
+Les modificateurs d'accès contrôlent **la visibilité des membres** des classes parentes et enfants.
 
-```csharp
-/*
-* Ici les 3 classes sont représentées dans le même fichier.
-* Dans un cadre professionnel, chaque classe sera 
-* représentée dans un fichier à part.
-*/
-class Vehicule
-{
-    public string Modele { get; set; }
-    public void Demarrer()
-    {
-        Console.WriteLine($"{Modele} démarre.");
-    }
-}
-
-class Voiture : Vehicule
-{
-    public int NombrePortes { get; set; }
-}
-
-class Moto : Vehicule
-{
-    public bool AUnSidecar { get; set; }
-}
-```
-### Utilisation :
-```csharp
-Voiture maVoiture = new Voiture { Modele = "Tesla", NombrePortes = 4 };
-maVoiture.Demarrer();
-Console.WriteLine($"Ma voiture a {maVoiture.NombrePortes} portes.");
-
-Moto maMoto = new Moto { Modele = "Harley", AUnSidecar = true };
-maMoto.Demarrer();
-Console.WriteLine($"Ma moto a un sidecar : {maMoto.AUnSidecar}");
-```
+|Modificateur           |Classe         |Sous-classe (enfant)           |Extérieur (autre classe)           |
+|-----------------------|---------------|-------------------------------|-----------------------------------|
+|public                 |✅ Visible     |✅ Visible                     |✅ Visible                         |
+|protected              |✅ Visible     |✅ Visible                     |❌ Non visible                     |
+|private                |✅ Visible     |❌ Non visible                 |❌ Non visible                     |
 
 <br>
 
-## 6. La surcharge de Méthodes (override)
-La surcharge permet à une classe dérive de **remplacer** une méthode définie dans la classe de base.
-C'est utile lorsqu'on veut adapter le comportement d'une méthode héritée pour qu'elle soit spécifique
-à la class dérivée.
-### Comment fonctionne la surcharge en C# ?
-- La méthode de la classe de base doit être déclarée avec le mot clé `virtual`
-- La classe dérivée doit utiliser le mot-clé `override` pour indiquer qu'elle remplace cette méthode.
+## 5️⃣ Opérateurs `is` et `as`
+Ces opérateurs permettent de **tester et convertir des objets** dans le cadre de l'héritage.
 
+### L'opérateur `is`
+Permet de vérifier si un objet est d'un certain type.  
+**Syntaxe** :
 ```csharp
-class Vehicule
+if (objet is Etudiant)
 {
-    public string Modele { get; set; }
-    public virtual void AfficherInfos()
-    {
-        Console.WriteLine($"Modèle : {Modele}");
-    }
+    Console.WriteLine("C'est un étudiant.");
 }
+```
 
-class Moto : Vehicule
+### L'opérateur `as`
+Permet de **convertir** un objet d'un type vers un autre.  
+Si la conversion échoue, in renvoie `null` au lieu de lever une erreur.  
+**Syntaxe** :
+```csharp
+Personne p = new Etudiant();
+Etudiant etu = p as Etudiant; // essaie de convertir Personne en Etudiant
+if (etu != null)
 {
-    public string NombreDeRoues { get; set; }
-    public override void AfficherInfos()
-    {
-        // On surcharge pour inclure plus d'informations
-        Console.WriteLine($"Modèle : {Modele}, Nombre de roues : {NombreDeRoues}");
-    }
+    etu.Etudier();
 }
 ```
 
 <br>
 
-## 7. Exercice
+## 6️⃣ Exemple concret
+Créer une application de gestion de personnes et d'étudiants.
+
+### Classe de base : Personne
+```csharp
+class Personne
+{
+    public string Nom { get; set; }
+    public string Prenom { get; set; }
+
+    public void SePresenter()
+    {
+        Console.WriteLine($"Je suis {Prenom} {Nom}.");
+    }
+}
+```
+
+### Classe dérivée : Etudiant
+```csharp
+class Etudiant : Personne
+{
+    public int Matricule { get; set; }
+
+    public void Etudier()
+    {
+        Console.WriteLine($"{Prenom} étudie avec le matricule {Matricule}.");
+    }
+}
+```
+
+### Utilisation dans Main
+```csharp
+Personne p1 = new Personne { Prenom = "Paul", Nom = "Martin" };
+Etudiant etu1 = new Etudiant { Prenom = "Alice", Nom = "Dupont", Matricule = 12345 };
+
+p1.SePresenter();
+etu1.SePresenter();
+etu1.Etudier();
+
+// Utilisation de l'opérateur "is"
+if (etu1 is Personne)
+{
+    Console.WriteLine("Un étudiant est aussi une personne.");
+}
+
+// Utilisation de l'opérateur "as"
+Personne p2 = new Etudiant { Prenom = "Luc", Nom = "Durand" };
+Etudiant etu2 = p2 as Etudiant;
+if (etu2 != null)
+{
+    etu2.Etudier();
+}
+```
+
+**Sortie** :
+```txt
+Je suis Paul Martin.
+Je suis Alice Dupont.
+Alice étudie avec le matricule 12345.
+Un étudiant est aussi une personne.
+Luc étudie avec le matricule 0.
+```
+
+<br>
+
+## 7️⃣ Exercice
 ### Énoncé :
-1. Créer un nouveau projet console
-2. Dans un nouveau fichier, créer une classe `Personne` avec les propriétés `Nom` et `Prenom`, et une méthode virtuelle `AfficherInfos()` qui affiche ces informations.
-3. Dans un nouveau fichier, créer une classe dérivée `Etudiant` qui hérite de `Personne`, ajoute la propriété `NumeroEtudiant`, et surcharge la méthode `AfficherInfos()` pour inclure cette nouvelle propriété.
-4. Dans la méthode `Main`, instancier un objet `Etudiant`, définir ses propriétés, et appeler `AfficherInfos()` pour vérifier le résultat.
+1. Créez une classe `Personne` avec les propriétés `Nom`, `Prenom`, et la méthode `SePresenter()`.
+2. Créez une classe `Etudiant` qui hérite de `Personne`, avec une propriété supplémentaire `Matricule` et la méthode `Etudier()`.
+3. Instanciez un étudiant, affichez ses informations avec `SePresenter()` et `Etudier()`.
+4. Testez l'opérateur `is` et `as` sur des objets `Personne` et `Etudiant`.
+
+---
+
+## Résumé
+- **Héritage** : permet de **réutiliser le code** via la relation "est un(e)".
+- **Modificateurs d'accès** : `public`, `protected`, et `private` contrôlent l'accès aux membres des classes.
+- **Opérateurs `is` et `as`** : permettent de tester et convertir des objets d'une hiérarchie.
