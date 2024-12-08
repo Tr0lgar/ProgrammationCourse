@@ -3,21 +3,21 @@ using System;
 class CompteBancaire
 {
     // Attributs privés
-    private string numeroCompte;
-    private double solde;
+    private string _numeroCompte;
+    private double _solde;
 
     // Constructeur
     public CompteBancaire(string numero, double montantInitial)
     {
-        NumeroCompte = numero;
+        _numeroCompte = numero;
         if (montantInitial >= 0)
         {
-            Solde = montantInitial;
+            _solde = montantInitial;
         }
         else
         {
             Console.WriteLine("Le montant initial ne peut pas être négatif. Solde mis à 0.");
-            Solde = 0;
+            _solde = 0;
         }
     }
 
@@ -26,8 +26,8 @@ class CompteBancaire
     {
         if (montant > 0)
         {
-            Solde += montant;
-            Console.WriteLine($"Déposé : {montant} €. Nouveau solde : {Solde} €");
+            _solde += montant;
+            Console.WriteLine($"Déposé : {montant} €. Nouveau solde : {_solde} €");
         }
         else
         {
@@ -38,12 +38,12 @@ class CompteBancaire
     // Propriété pour le numéro de compte
     public string NumeroCompte
     {
-        get { return numeroCompte; }
+        get { return _numeroCompte; }
         set
         {
             if (!string.IsNullOrEmpty(value))
             {
-                numeroCompte = value;
+                _numeroCompte = value;
             }
             else
             {
@@ -55,12 +55,12 @@ class CompteBancaire
     // Propriété pour le solde
     public double Solde
     {
-        get { return solde; }
+        get { return _solde; }
         private set
         {
             if (value >= 0)
             {
-                solde = value;
+                _solde = value;
             }
             else
             {

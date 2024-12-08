@@ -41,8 +41,8 @@ En C#, les attributs sont généralement déclarés comme **privés** (`private`
 ```csharp
 class Personne
 {
-    public string Nom;
-    public int Age;
+    public string _nom;
+    public int _age;
 }
 
 class Program
@@ -52,7 +52,7 @@ class Program
         Personne p = new Personne();
         p.Nom = "Alice";
         p.Age = -5; // Cette valeur est incohérente
-        Console.WriteLine($"Nom : {p.Nom}, Âge : {p.Age}");
+        Console.WriteLine($"Nom : {p._nom}, Âge : {p._age}");
     }
 }
 ```
@@ -62,13 +62,13 @@ class Program
 ```csharp
 class Personne
 {
-    private string nom;
-    private int age;
+    private string _nom;
+    private int _age;
 
     // Getter pour Nom
     public string GetNom()
     {
-        return nom;
+        return _nom;
     }
 
     // Setter pour Nom
@@ -76,7 +76,7 @@ class Personne
     {
         if (!string.IsNullOrEmpty(value))
         {
-            nom = value;
+            _nom = value;
         }
         else
         {
@@ -87,7 +87,7 @@ class Personne
     // Getter pour Age
     public int GetAge()
     {
-        return age;
+        return _age;
     }
 
     // Setter pour Age
@@ -95,7 +95,7 @@ class Personne
     {
         if (value >= 0)
         {
-            age = value;
+            _age = value;
         }
         else
         {
@@ -125,18 +125,18 @@ C# propose une syntaxe plus simple pour l’encapsulation à l’aide de **propr
 ```csharp
 class Personne
 {
-    private string nom;
-    private int age;
+    private string _nom;
+    private int _age;
 
     // Propriété pour Nom
     public string Nom
     {
-        get { return nom; }
+        get { return _nom; }
         set
         {
             if (!string.IsNullOrEmpty(value))
             {
-                nom = value;
+                _nom = value;
             }
             else
             {
@@ -148,12 +148,12 @@ class Personne
     // Propriété pour Age
     public int Age
     {
-        get { return age; }
+        get { return _age; }
         set
         {
             if (value >= 0)
             {
-                age = value;
+                _age = value;
             }
             else
             {
@@ -168,9 +168,9 @@ class Program
     static void Main(string[] args)
     {
         Personne p = new Personne();
-        p.Nom = "Bob";  // Utilise la propriété avec validation
-        p.Age = 25;
-        Console.WriteLine($"Nom : {p.Nom}, Âge : {p.Age}");
+        p._nom = "Bob";  // Utilise la propriété avec validation
+        p._age = 25;
+        Console.WriteLine($"Nom : {p._nom}, Âge : {p._age}");
 
         p.Age = -10;  // Déclenche un message d'erreur
     }
