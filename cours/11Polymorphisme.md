@@ -53,16 +53,17 @@ class Chien : Animal
     }
 }
 ```
- ### 🔄 Redéfinition
+
+### 🔄 Redéfinition
 - **Concept** : Une classe enfant peut redéfinir (remplacer) une méthode de la classe parent.
 - **Mots-clés utilisés** : `virtual`, `override` ou `abstract` (nous verrons la différence plus tard).
 
 ### 🚀 Différence entre surcharge et redéfinition
-| Surcharge             | Polymorphisme / Redéfinition          |
-|-----------------------|---------------------------------------|
-| Même classe           | Hiérarchie de classes                 |
-|Différente signature   | Même signature                        |
-| Utilise `params`, `ref`, etc.| Utilise `virtual`, `override` et `abstract`|
+|Surcharge                      |Polymorphisme / Redéfinition               |
+|-------------------------------|-------------------------------------------|
+|Même classe                    |Hiérarchie de classes                      |
+|Différente signature           |Même signature                             |
+|Utilise `params`, `ref`, etc.  |Utilise `virtual`, `override` et `abstract`|
 
 <br>
 
