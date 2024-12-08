@@ -57,4 +57,9 @@ layout : default
 
 <hr>
 
+## 11. [Polymorphisme](cours/11Polymorphisme.md)
+🔀 Découvrez le polymorphisme, un pilier essentiel de la programmation orientée objet. Apprenez à utiliser des méthodes communes sur des objets de types différents, et explorez des concepts avancés comme le **polymorphisme par héritage** et le **polymorphisme d'interface**.
+
+<hr>
+
 #### 💡 Conseil : Naviguez dans l'ordre ou explorez directement les sections qui vous intéressent. Bon apprentissage !
