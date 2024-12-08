@@ -24,12 +24,12 @@ Explication : La programmation, c'est l'art de donner des instructions à un ord
 ## 2. Les concepts de base de la programmation
 ### Variables et types de données
 - Une variable est un espace mémoire où l'on stocke des informations que le programme peut utiliser. chaque variable a un nom et un type de données (par exemple, un nombre, un texte, etc.)
-- Il y a plusieurs manières de nommer ses variables, mais la plus répendue est le camelCase : Cela consiste à écrire le premier mot du nom tout en minuscule et de coller et commencer les autres mots par une majuscule. Exemple : `maNouvelleVariable`
+- Il y a plusieurs manières de nommer ses variables, mais la plus répandue est le camelCase : Cela consiste à écrire le premier mot du nom tout en minuscule et de coller et commencer les autres mots par une majuscule. Exemple : `maNouvelleVariable`
 
 ### Exemple en C# :
 ```csharp
 int age = 21; // Variable de type entier (int)
-string name = Mathieu; // Variable de type chaine de carctères (string)
+string name = Mathieu; // Variable de type chaine de caractères (string)
 double temperature = 18.5; // Variable de type décimale (double)
 ```
 - Il existes plusieurs types de variables en fonction de l'utilité de cette dernière. Chaque type possède une taille et une plage de valeur.
@@ -147,7 +147,7 @@ class Program
 
 ## 5. Exercice : Crée un jeu "Devine le nombre"
 
-### Enoncé :
+### Énoncé :
 Dans cet exercice, tu vas créer un petit jeu où l'utilisateur doit deviner un nombre secret. Le programme va choisir un nombre aléatoire entre 1 et 100, et l'utilisateur devra essayer de le deviner. À chaque tentative, le programme dira si le nombre est plus grand ou plus petit que le nombre à deviner. Le jeu continue jusqu'à ce que l'utilisateur trouve le bon nombre. Une fois le nombre deviné, le programme affichera le nombre de tentatives effectuées.
 
 ### Instructions :
@@ -155,7 +155,7 @@ Dans cet exercice, tu vas créer un petit jeu où l'utilisateur doit deviner un 
 2. Demande à l'utilisateur de deviner le nombre. Si le nombre deviné est incorrect, indique si le nombre secret est plus grand ou plus petit.
 3. Continue de demander à l'utilisateur de deviner jusqu'à ce qu'il trouve le bon nombre.
 4. Lorsque le nombre est trouvé, affiche un message de félicitations et le nombre de tentatives nécessaires pour deviner le nombre.
-Utilise `Console.ReadLine()` pour lire l'entrée de l'utilisateur. **Attention**, l'entrée de l'utilisateur ne sera pas considérée comme un nombre mais comme une chaine de caractères, il fauddra penser à la transformer ;).
+Utilise `Console.ReadLine()` pour lire l'entrée de l'utilisateur. **Attention**, l'entrée de l'utilisateur ne sera pas considérée comme un nombre mais comme une chaine de caractères, il faudra penser à la transformer ;).
 
 ### Code de départ :
 Voici un début de code pour te mettre sur la bonne voie :

@@ -106,7 +106,7 @@ class Program
 Ma voiture est une Tesla Model S de couleur Rouge.
 La voiture accélère !
 La voiture freine !
-Bienvenue chez Testla !
+Bienvenue chez Tesla !
 ```
 
 <br>

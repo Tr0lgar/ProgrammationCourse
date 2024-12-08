@@ -144,7 +144,7 @@ do
 ```
 
 ### Boucles Imbriquées et Conditions Complexes 
-Les boucles imbriquées permettent d'exécuter une boucle à l'inérieur d'une autre boucle.
+Les boucles imbriquées permettent d'exécuter une boucle à l'intérieur d'une autre boucle.
 ```csharp
 for (int i = 1; i <= 5; i++)
 {
@@ -155,7 +155,7 @@ for (int i = 1; i <= 5; i++)
     Console.WriteLine();
 }
 ```
-Ce code génère un triangle de charactères `*`.
+Ce code génère un triangle de caractères `*`.
 
 ## 4. Exercices Pratiques :
 ### Exercice 1 : Calculer la somme des n premiers nombres

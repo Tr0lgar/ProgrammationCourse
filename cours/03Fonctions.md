@@ -19,7 +19,7 @@ order: 3  # Ordre de tri
 Les **fonctions** (ou **Méthodes**, ça signifie la même chose) sont des blocs de code réutilisables qui accomplissent une tâche spécifique. On peut les comparer à des *"recettes de cuisine"* :une fois que la recette est définie, on peut la réutiliser autant de fois qu'on le souhaite sans devoir la réécrire à chaque fois.
 
 ### Pourquoi utiliser des Fonctions ?
-- **Organisation du code** : Permet de  diviser un programmes en petites parties géérables.
+- **Organisation du code** : Permet de  diviser un programmes en petites parties gérables.
 - **Réutilisation** : Une même fonction peut être appelée plusieurs fois, ce qui évite la répétition du code.
 - **Lisibilité** : Le code est plus facile à comprendre, car il est divisé en parties logiques.
 - **Maintenance** : Les modifications peuvent être faites à un seul endroit, sans avoir à changer le code partout.
@@ -29,7 +29,7 @@ Pour créer une fonction, il faut :
 1. **Définir le type de retour** : Ce que la fonction va renvoyer après son exécution (par exemple, un `int`, un `string`, etc.). Si elle ne renvoie rien, on utilise le mot-clé `void`.
 2. **Donner un nom à la fonction** : Le nom doit être explicite sur ce que fait la fonction.
 3. **Spécifier les paramètres *(facultatif)*** : Ce sont les informations que la fonction **peut** recevoir pour effectuer sa tâche.
-4. **Ecrire le corps de la fonction** : Le code à exécuter à chaque appel de la fonction.
+4. **Écrire le corps de la fonction** : Le code à exécuter à chaque appel de la fonction.
 
 ### Exemple de fonction simple
 ```csharp
@@ -97,10 +97,10 @@ int somme2 = Addition(2, 3, 4);   // Appelle la seconde fonction
 ```
 
 ## 7. Exercice récapitulatif
-### Enoncé :
+### Énoncé :
 Dans cet exercice, vous allez créer un petit programme de calculatrice qui permet à l'utilisateur d'effectuer des opérations de base : addition, soustraction, multiplication et division. Chaque opération sera implémentée sous forme de fonction.
 Modifiez le code en réalisant les tâches marquées d'un `TODO`
-1. **Créer une fonction pour chaque oppération** :
+1. **Créer une fonction pour chaque opération** :
     - Créer une fonction `Addition` qui prend en **paramètres** deux nombres et **retourne** leur somme.
     - Créer une fonction `Soustraction` qui prend en **paramètres** deux nombres et **retourne** leur différence.
     - Créer une fonction `Multiplication` qui prend en **paramètres** deux nombres et **retourne** leur produit.

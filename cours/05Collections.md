@@ -169,7 +169,7 @@ class Program
 
 ### Exercice de manipulation des List
 #### Énoncé :
-Dans cet exercice, tu vas créer un programme qui va gérer une liste de fruits. Le programme doit permettre à l'utilisateur d'ajouter des fruits, d'en supprimer, de consulter la liste, de rechercher un fruit dans laliste et de supprimer la liste entière.
+Dans cet exercice, tu vas créer un programme qui va gérer une liste de fruits. Le programme doit permettre à l'utilisateur d'ajouter des fruits, d'en supprimer, de consulter la liste, de rechercher un fruit dans la liste et de supprimer la liste entière.
 
 Le programme doit fonctionner en boucle pour que l'utilisateur puisse choisir les différentes options autant de fois qu'il le souhaite, jusqu'à ce qu'il décide de quitter.
 
