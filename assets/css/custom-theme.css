@@ -146,6 +146,7 @@ pre {
     background-color: #1e1e2e;
     color: #cdd6f4;
     overflow: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .highlight .k {
@@ -218,7 +219,7 @@ th, td {
 }
 
 th {
-    background: linear-gradient(to right, #3498db, #2980b9);
+    background: #3498db;
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
