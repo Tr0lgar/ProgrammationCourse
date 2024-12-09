@@ -10,6 +10,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* Texture de fond légère */
+    background-size: 200px;
     overflow-x: hidden;
 }
 
@@ -34,6 +36,8 @@ body {
     border-radius: 12px;
     border: 1px solid #ddd;
     box-sizing: border-box;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Texture légère */
+    background-blend-mode: multiply;
 }
 
 /* Sidebar */
@@ -51,6 +55,7 @@ body {
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
+    background-image: url('https://www.transparenttextures.com/patterns/little-pluses.png');
 }
 
 .sidebar h2 {
@@ -102,12 +107,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #2c3e50;
+    text-shadow: 1px 1px 2px #ccc;
 }
 
 h1 {
     font-size: 2.5em;
     border-bottom: 0.125rem solid #e0e0e0;
     padding-bottom: 0.3em;
+    background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 h2 {
@@ -146,7 +155,8 @@ pre {
     background-color: #1e1e2e;
     color: #cdd6f4;
     overflow: auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 2px dashed #6c7086;
 }
 
 .highlight .k {
@@ -185,11 +195,8 @@ code.language-plaintext.highlighter-rouge {
 
 /* Blockquotes */
 blockquote {
-    border-left: 0.25rem solid #3498db;
-    margin: 1.5em 0;
-    padding-left: 1em;
-    font-style: italic;
-    color: #666;
+    border-left: 0.25rem dashed #3498db;
+    background-color: rgba(52, 152, 219, 0.05);
 }
 
 /* Lists */
@@ -210,6 +217,8 @@ table {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fdfdfd;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
 }
 
 th, td {
@@ -237,6 +246,7 @@ tr:nth-child(even) td {
 tr:hover td {
     background-color: #d6eaf8;
     transition: background-color 0.3s ease-in-out;
+    transform: scale(1.02);
 }
 
 td {
@@ -254,11 +264,13 @@ button {
     font-size: 1rem;
     border-radius: 0.25rem;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 /* Responsive Menu Burger */
@@ -323,6 +335,7 @@ button:hover {
 /* Sidebar ouverte si case cochée */
 .menu-toggle:checked ~ .sidebar {
     transform: translateX(100%);
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
 }
 
 /* Sidebar visible sur grands écrans */
