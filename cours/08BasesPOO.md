@@ -8,16 +8,14 @@ order: 8  # Ordre de tri
 Dans ce cours, nous allons traduire les concepts abstraits de la programmation orientée objet (POO) en code concret en utilisant le langage C#. Tu vas apprendre à créer des classes et des objets, et à comprendre leur rôle dans la construction de programmes modulaires, robustes et évolutifs.
 
 ## Sommaire
-- [Objectifs](#objectifs)
-- [1. Classe et Objet : Rappel](#1-classe-et-objet--rappel)
-- [2. Créer une Classe en C#](#2-créer-une-classe-en-c)
-- [3. Créer et Utiliser un Objet](#3-créer-et-utiliser-un-objet)
-- [4. Ajouter un constructeur](#4-ajouter-un-constructeur)
-- [5. Exercice pratique](#5-exercice-pratique)
-- [Résumé](#résumé)
+1. [Classe et Objet : Rappel](#1️⃣-classe-et-objet--rappel)
+2. [Créer une Classe en C#](#2️⃣-créer-une-classe-en-c)
+3. [Créer et Utiliser un Objet](#3️⃣-créer-et-utiliser-un-objet)
+4. [Ajouter un constructeur](#4️⃣-ajouter-un-constructeur)
+5. [Exercice pratique](#5️⃣-exercice-pratique)
+6. [Résumé](#résumé)
 
-
-<hr>
+---
 
 ## Objectifs
 1. Comprendre ce qu’est une classe et un objet.
@@ -27,7 +25,7 @@ Dans ce cours, nous allons traduire les concepts abstraits de la programmation o
 
 <hr>
 
-## 1. Classe et Objet : Rappel
+## 1️⃣ Classe et Objet : Rappel
 Dans la POO, **une classe** est comme une *recette* ou un *plan* : elle définit ce que sont les objets qui en découlent. Par exemple, la classe *Voiture* peut représenter les caractéristiques et les comportements généraux d'une voiture, mais une *voiture spécifique* (comme votre voiture) est un objet de cette classe.
 - **Classe** : Définition de la structure et des comportements.
 - **Objet** : Une instance (ou un exemplaire) d'une classe, avec des données spécifiques.
@@ -43,7 +41,7 @@ Avec cette classe, nous pouvons créer un objet Voiture qui sera une Tesla "Mode
 
 <br>
 
-## 2. Créer une Classe en C#
+## 2️⃣ Créer une Classe en C#
 Voici comment créer une classe de base en C# :
 ```csharp
 public class Voiture
@@ -77,7 +75,7 @@ public class Voiture
 
 <br>
 
-## 3. Créer et Utiliser un Objet
+## 3️⃣ Créer et Utiliser un Objet
 Pour utiliser une classe, on crée un objet (instance de la classe).
 ### Exemple : Instanciation et manipulation d’un objet
 ```csharp
@@ -111,7 +109,7 @@ Bienvenue chez Tesla !
 
 <br>
 
-## 4. Ajouter un constructeur
+## 4️⃣ Ajouter un constructeur
 Un constructeur permet d'initialiser (créer) un objet avec des valeurs par défaut.
 ### Exemple avec un constructeur :
 ```csharp
@@ -156,7 +154,7 @@ class Program
 
 <br>
 
-## 5. Exercice pratique
+## 5️⃣ Exercice pratique
 Crée un classe "Animal" avec les attributs suivants :
 - **Nom** (string) : Le nom de l’animal.
 - **Espece** (string) : L’espèce de l’animal.

@@ -6,14 +6,27 @@ order: 6  # Ordre de tri
 
 # Gestion des Exceptions avec `try`...`catch`
 
-## 1. Introduction aux Exceptions
+## Sommaire :
+1. [Introduction aux Exceptions](#1️⃣-introduction-aux-exceptions)
+2. [Utilisation de `try`...`catch`](#2️⃣-utilisation-de-trycatch)
+3. [Différents types d'Exceptions](#3️⃣-différents-types-dexceptions)
+4. [Utiliser `finally`](#4️⃣-utiliser-finally)
+5. [Relever des Exceptions Personnalisées avec `throw`](#5️⃣-relever-des-exceptions-personnalisées-avec-throw)
+6. [Résumé](#6️⃣-résumé)
+7. [Exercice](#7️⃣-exercice--gestion-des-erreurs-dans-une-liste-de-notes)
+
+---
+
+## 1️⃣ Introduction aux Exceptions
 Les exceptions sont des erreurs qui se produisent pendant l'exécution d’un programme. Elles interrompent le flux normal du programme et, si elles ne sont pas gérées, elles provoquent un arrêt brutal du programme avec un message d’erreur. En gérant les exceptions, on peut **réagir à ces erreurs** et éviter que le programme ne se bloque de manière imprévisible.
 ### Pourquoi gérer les exceptions ?
 - **Éviter les plantages** : Plutôt que de laisser le programme s'arrêter brutalement, on peut gérer les erreurs et afficher des messages utiles.
 - **Améliorer l'expérience utilisateur** : Fournir des messages clairs permet aux utilisateurs de comprendre pourquoi une opération a échoué.
 - **Garantir la stabilité** : En capturant les erreurs, on peut décider de continuer l’exécution, de passer à une autre opération, ou de réessayer.
 
-## 2. Utilisation de `try`...`catch`
+<br>
+
+## 2️⃣ Utilisation de `try`...`catch`
 Le bloc `try`...`catch` permet de **tester un bloc de code** et **de réagir aux erreurs** s’il en survient une.
 ### Syntaxe de base
 ```csharp
@@ -49,7 +62,9 @@ Dans cet exemple :
 - Comme `b` vaut 0, une `DivideByZeroException` est lancée.
 - Le `catch` capture l'exception et affiche un message sans arrêter le programme.
 
-## 3. Différents types d'Exceptions
+<br>
+
+## 3️⃣ Différents types d'Exceptions
 C# fournit plusieurs types d'exceptions pour gérer différents types d'erreurs. Voici quelques exemples :
 - `DivideByZeroException` : Division par zéro.
 - `FormatException` : Format incorrect (exemple : essayer de convertir une chaîne en nombre alors qu’elle contient des lettres).
@@ -84,7 +99,9 @@ Ici :
 - Si le nombre est en dehors des limites du tableau, une `IndexOutOfRangeException` est levée.
 - Si une autre erreur survient, elle est capturée par le bloc `catch` générique.
 
-## 4. Utiliser `finally`
+<br>
+
+## 4️⃣ Utiliser `finally`
 Le bloc `finally` peut être ajouté après les blocs `try` et `catch`. Le code dans le `finally` s'exécute **toujours**, que l'exception soit levée ou non. Cela est utile pour **libérer des ressources**, comme fermer un fichier ou une connexion.
 
 ### Exemple avec `finally` :
@@ -103,7 +120,9 @@ finally
 }
 ```
 
-## 5. Relever des Exceptions Personnalisées avec `throw`
+<br>
+
+## 5️⃣ Relever des Exceptions Personnalisées avec `throw`
 Il est possible de lever (ou relancer) une exception pour signaler une erreur spécifique dans une fonction. On utilise alors le mot-clé `throw`.
 ### Exemple de levée d'une exception :
 ```csharp
@@ -127,13 +146,17 @@ catch (DivideByZeroException ex)
 }
 ```
 
-## 6. Résumé
+<br>
+
+## 6️⃣ Résumé
 - `try` : Teste un bloc de code qui pourrait générer une exception.
 - `catch` : Capture et gère l'exception si elle survient.
 - `finally` : S'exécute dans tous les cas pour libérer les ressources, qu'une exception soit levée ou non.
 - `throw` : Permet de relancer une exception, éventuellement avec un message personnalisé.
 
-## 7. Exercice : Gestion des Erreurs dans une liste de Notes
+<br>
+
+## 7️⃣ Exercice : Gestion des Erreurs dans une liste de Notes
 Écris un programme qui permet à l'utilisateur d'ajouter des notes dans une liste. Le programme doit :
 1. Demander à l’utilisateur de saisir des notes (entre 0 et 20) jusqu’à ce que l’utilisateur décide de stopper.
 2. Valider que chaque entrée est bien un nombre et qu’il se situe entre 0 et 20. Si ce n'est pas le cas, une exception doit être gérée.

@@ -3,25 +3,31 @@ layout: cours
 title: Introduction
 order: 1  # Ordre de tri
 ---
+
 # Introduction à la programmation (C#)
+
 ## Sommaire :
-- [1. Qu'est-ce que la programmation ?](#1-quest-ce-que-la-programmation-)
-- [2. Les concepts de base de la programmation](#2-les-concepts-de-base-de-la-programmation)
+1.  [Qu'est-ce que la programmation ?](#1️⃣-quest-ce-que-la-programmation-)
+2. [Les concepts de base de la programmation](#2️⃣-les-concepts-de-base-de-la-programmation)
     - [Variables et types de données](#variables-et-types-de-données)
     - [Instructions et séquences](#instructions-et-séquences)
     - [Conditions if/else](#conditions-ifelse)
     - [Boucles (for, while, do while, etc.)](#boucles-for-while-do-while-etc)
     - [Différence entre `while` et `do while` :](#différence-entre-while-et-do-while-)
-- [3. Premier programme : "Hello, World !"](#3-premier-programme--hello-world-)
-- [4. Quelques bonnes pratiques pour débuter](#4-quelques-bonnes-pratiques-pour-débuter)
-- [5. Exercice : Crée un jeu "Devine le nombre"](#5-exercice--crée-un-jeu-devine-le-nombre)
+3. [Premier programme : "Hello, World !"](#3️⃣-premier-programme--hello-world-)
+4. [ Quelques bonnes pratiques pour débuter](#4️⃣-quelques-bonnes-pratiques-pour-débuter)
+5. [ Exercice : Crée un jeu "Devine le nombre"](#5️⃣-exercice--crée-un-jeu-devine-le-nombre)
+
+---
     
-## 1. Qu'est-ce que la programmation ?
+## 1️⃣ Qu'est-ce que la programmation ?
 Explication : La programmation, c'est l'art de donner des instructions à un ordinateur pour qu'il accomplisse des tâches. Cela se fait en écrivant du code dans un langage de programmation, qui est une sorte de langage spécial que les humains utilisent pour communiquer avec les machines. Quand on écrit un programme, on crée une suite d'instructions que l'ordinateur va suivre.
 ### Exemple simple :
 - Une recette de cuisine c'est une suite d'étapes à réaliser pour obtenir un plat. Un programme c'est une liste d'étapes pour que l'ordinateur réalise une tâche, comme afficher un message ou résoudre un calcul.
 
-## 2. Les concepts de base de la programmation
+<br>
+
+## 2️⃣ Les concepts de base de la programmation
 ### Variables et types de données
 - Une variable est un espace mémoire où l'on stocke des informations que le programme peut utiliser. chaque variable a un nom et un type de données (par exemple, un nombre, un texte, etc.)
 - Il y a plusieurs manières de nommer ses variables, mais la plus répandue est le camelCase : Cela consiste à écrire le premier mot du nom tout en minuscule et de coller et commencer les autres mots par une majuscule. Exemple : `maNouvelleVariable`
@@ -121,7 +127,9 @@ Dans cet exemple, la boucle `do while` exécute d'abord le corps de la boucle (a
 - Boucle `do while` : Le corps de la boucle est exécuté au moins une fois, car la condition est vérifiée après l'exécution du corps.
 Ces différences permettent de choisir la boucle la plus adaptée selon le contexte. Utilise la boucle `while` si tu souhaites vérifier la condition avant chaque itération, et la boucle `do while` si tu veux que le corps soit exécuté au moins une fois, même si la condition est fausse dès le début.
 
-## 3. Premier programme : "Hello, World !"
+<br>
+
+## 3️⃣ Premier programme : "Hello, World !"
 Le programme "Hello, World !" est souvent le premier programme écrit par les débutants. Il permet de comprendre comment fonctionne l'affichage à l'écran.
 ```csharp
 using System;
@@ -140,12 +148,16 @@ class Program
 - `static void Main(string[] args)` : La méthode `Main` est le point d'entrée du programme.
 - `Console.WriteLine("Hello, World !");` : Affiche le texte à l'écran. Console est une classe et WriteLine() une méthode appartenant à cette classe.
 
-## 4. Quelques bonnes pratiques pour débuter
+<br>
+
+## 4️⃣ Quelques bonnes pratiques pour débuter
 - Utiliser des noms de variables clairs et explicites : Cela rend le code plus facile à comprendre
 - Commenter le code : Ajouter des commentaires pour expliquer ce que fait le code.
 - Tester le code régulièrement ; Ne pas attendre d'avoir écrit tout le programme pour tester.
 
-## 5. Exercice : Crée un jeu "Devine le nombre"
+<br>
+
+## 5️⃣ Exercice : Crée un jeu "Devine le nombre"
 
 ### Énoncé :
 Dans cet exercice, tu vas créer un petit jeu où l'utilisateur doit deviner un nombre secret. Le programme va choisir un nombre aléatoire entre 1 et 100, et l'utilisateur devra essayer de le deviner. À chaque tentative, le programme dira si le nombre est plus grand ou plus petit que le nombre à deviner. Le jeu continue jusqu'à ce que l'utilisateur trouve le bon nombre. Une fois le nombre deviné, le programme affichera le nombre de tentatives effectuées.

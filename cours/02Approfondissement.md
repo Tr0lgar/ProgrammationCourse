@@ -6,12 +6,14 @@ order: 2  # Ordre de tri
 
 # Approfondissement des concepts de base
 ## Sommaire
-- [1. Variables et Opérateurs](#1-variables-et-opérateurs)
-- [2. Conditions (if/else, switch)](#2-conditions-ifelse-switch)
-- [3. Boucles (for, while, do while)](#3-boucles-for-while-do-while)
-- [4. Exercices pratiques](#4-exercices-pratiques-)
+1. [Variables et Opérateurs](#1️⃣-variables-et-opérateurs)
+2. [Conditions (if/else, switch)](#2️⃣-conditions-ifelse-switch)
+3. [Boucles (for, while, do while)](#3️⃣-boucles-for-while-do-while3-boucles-for-while-do-while)
+4. [Exercices pratiques](#4️⃣-exercices-pratiques-4-exercices-prat)
 
-## 1. Variables et Opérateurs
+---
+
+## 1️⃣ Variables et Opérateurs
 Les variables sont utilisées pour stocker des données et les manipuler. Nous allons approfondir les différents types de variables et les opérateurs couramment utilisés.
 
 ### Types de Variables
@@ -66,7 +68,9 @@ bool resultat = a && b; // false
 bool inversion = !a; // false
 ```
 
-## 2. Conditions (if/else, switch)
+<br>
+
+## 2️⃣ Conditions (if/else, switch)
 Les structures conditionnelles permettent d'exécuter du code différemment en fonction de certaines conditions.
 ### Structure `if/else`
 La structure `if/else` permet de prendre des décision en fonction de l'évaluation d'une expression booléenne.
@@ -110,7 +114,10 @@ switch (grade)
         break;
 }
 ```
-## 3. Boucles (for, while, do while)
+
+<br>
+
+## 3️⃣ Boucles (for, while, do while)
 Les boucles permettent de répéter des instructions. Les boucles imbriquées et les conditions complexes permettent de créer des logiques plus sophistiquées.
 ### Boucle `for`
 La boucle `for` est souvent utilisée lorsque le nombre d'itérations est connu à l'avance.
@@ -157,7 +164,9 @@ for (int i = 1; i <= 5; i++)
 ```
 Ce code génère un triangle de caractères `*`.
 
-## 4. Exercices Pratiques :
+<br>
+
+## 4️⃣ Exercices Pratiques :
 ### Exercice 1 : Calculer la somme des n premiers nombres
 ```csharp
 using System;

@@ -7,16 +7,18 @@ order: 3  # Ordre de tri
 # Les Fonctions (ou Méthodes)
 
 ## Sommaire
-- [1. Introduction aux Fonctions](#1-introduction-aux-fonctions)
-- [2. Déclaration d'une Fonction](#2-déclaration-dune-fonction)
-- [3. Appel d'une fonction](#3-appel-dune-fonction)
-- [4. Les fonctions avec un type de retour `void`](#4-les-fonctions-avec-un-type-de-retour-void)
-- [5. Différence entre Paramètres et Arguments](#5-différence-entre-paramètres-et-arguments)
-- [6. Les Fonctions surchargées](#6-les-fonctions-surchargées)
-- [7. Exercice récapitulatif](#7-exercice-récapitulatif)
+1. [Introduction aux Fonctions](#1️⃣-introduction-aux-fonctions*)
+2. [Déclaration d'une Fonction](#2️⃣-déclaration-dune-fonction)
+3. [Appel d'une fonction](#3️⃣-appel-dune-fonction)
+4. [Les fonctions avec un type de retour `void`](#4️⃣-les-fonctions-avec-un-type-de-retour-void)
+5. [Différence entre Paramètres et Arguments](#5️⃣-différence-entre-paramètres-et-arguments)
+6. [Les Fonctions surchargées](#6️⃣-les-fonctions-surchargées)
+7. [Exercice récapitulatif](#7️⃣-exercice-récapitulatif)
 
-## 1. Introduction aux Fonctions
-Les **fonctions** (ou **Méthodes**, ça signifie la même chose) sont des blocs de code réutilisables qui accomplissent une tâche spécifique. On peut les comparer à des *"recettes de cuisine"* :une fois que la recette est définie, on peut la réutiliser autant de fois qu'on le souhaite sans devoir la réécrire à chaque fois.
+---
+
+## 1️⃣ Introduction aux Fonctions
+Les **fonctions** (ou **Méthodes**) sont des blocs de code réutilisables qui accomplissent une tâche spécifique. On peut les comparer à des *"recettes de cuisine"* : une fois que la recette est définie, on peut la réutiliser autant de fois qu'on le souhaite sans devoir la réécrire à chaque fois.
 
 ### Pourquoi utiliser des Fonctions ?
 - **Organisation du code** : Permet de  diviser un programmes en petites parties gérables.
@@ -24,7 +26,9 @@ Les **fonctions** (ou **Méthodes**, ça signifie la même chose) sont des blocs
 - **Lisibilité** : Le code est plus facile à comprendre, car il est divisé en parties logiques.
 - **Maintenance** : Les modifications peuvent être faites à un seul endroit, sans avoir à changer le code partout.
 
-## 2. Déclaration d'une Fonction
+<br>
+
+## 2️⃣ Déclaration d'une Fonction
 Pour créer une fonction, il faut :
 1. **Définir le type de retour** : Ce que la fonction va renvoyer après son exécution (par exemple, un `int`, un `string`, etc.). Si elle ne renvoie rien, on utilise le mot-clé `void`.
 2. **Donner un nom à la fonction** : Le nom doit être explicite sur ce que fait la fonction.
@@ -45,7 +49,9 @@ int Addition(int a, int b)
 - `int a`, `int b` : Les paramètres de la fonction. Ce sont les "ingrédients" que la fonction utilise pour faire son travail.
 - `return` : Utilisé pour renvoyer le résultat de la fonction. **Attention**, si le type dde retour de la fonction est `void`, il n'y a pas d'instruction `return` car elle ne retourne rien.
 
-## 3. Appel d'une fonction
+<br>
+
+## 3️⃣ Appel d'une fonction
 Pour utiliser une fonction, il suffit de l'**appeler** en utilisant son nom, et de fournir les paramètres nécessaires.
 ### Exemple
 ```csharp
@@ -54,7 +60,9 @@ Console.WriteLine("Le résultat est : " + resultat); // Affiche : Le résultat e
 ```
 Dans cet exemple, la fonction `Addition` est appelée avec les arguments `5` et `3`, et elle renvoie `8`, qui est ensuite stockée dans la variable `Resultat`.
 
-## 4. Les fonctions avec un type de retour `void`
+<br>
+
+## 4️⃣ Les fonctions avec un type de retour `void`
 Lorsque vous ne voulez pas que la fonction renvoie une valeur, on peut utiliser le mot-clé void. Ces fonctions effectuent une action, mais ne "donnent" pas de résultat.
 ### Exemple
 ```csharp
@@ -69,13 +77,17 @@ AfficherBienvenue(); // Affiche : Bienvenue dans le programme !
 ```
 Dans cet exemple, la fonction `AfficherBienvenue` ne renvoie rien, elle se contente d'afficher un message.
 
-## 5. Différence entre Paramètres et Arguments
+<br>
+
+## 5️⃣ Différence entre Paramètres et Arguments
 - Les **paramètres** sont les variables définies dans la déclaration de la fonction, et les **arguments** sont les valeurs que l'on passe à ces paramètres lorsqu'on appelle la fonction.
 
 ### Comparaison avec la cuisine
 Imaginons que nous avons une recette de gâteau (la fonction) qui demande des œufs et du sucre (les paramètres). Quand on prépare le gâteau, on utilise 2 œufs et 100g de sucre spécifiques (les arguments).
 
-## 6. Les Fonctions surchargées
+<br>
+
+## 6️⃣ Les Fonctions surchargées
 Les **fonctions surchargées** permettent de définir plusieurs fonctions avec le même nom, mais avec des paramètres différents. C'est comme avoir plusieurs recettes pour différents types de gâteaux, mais avec des ingrédients variés.
 ### Exemple
 ```csharp
@@ -96,7 +108,9 @@ int somme1 = Addition(2, 3);      // Appelle la première fonction
 int somme2 = Addition(2, 3, 4);   // Appelle la seconde fonction
 ```
 
-## 7. Exercice récapitulatif
+<br>
+
+## 7️⃣ Exercice récapitulatif
 ### Énoncé :
 Dans cet exercice, vous allez créer un petit programme de calculatrice qui permet à l'utilisateur d'effectuer des opérations de base : addition, soustraction, multiplication et division. Chaque opération sera implémentée sous forme de fonction.
 Modifiez le code en réalisant les tâches marquées d'un `TODO`

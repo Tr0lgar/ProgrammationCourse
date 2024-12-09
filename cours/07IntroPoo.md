@@ -7,16 +7,16 @@ order: 7  # Ordre de tri
 # Introduction à la Programmation Orientée Objet (POO)
 
 ## Sommaire
-- [1. Qu’est-ce que la Programmation Orientée Objet ?](#1-quest-ce-que-la-programmation-orientée-objet-)
-- [2. Pourquoi utiliser la POO ?](#2-pourquoi-utiliser-la-poo-)
-- [3. Concepts de base : Objets, Classes et Attributs](#3-concepts-de-base--objets-classes-et-attributs)
-- [4. Les Piliers de la POO](#4-les-piliers-de-la-poo)
-- [5. Comparaisons pratiques et analogies](#5-comparaisons-pratiques-et-analogies)
-- [6. Résumé](#6-résumé)
+1. [Qu’est-ce que la Programmation Orientée Objet ?](#1️⃣-quest-ce-que-la-programmation-orientée-objet-)
+2. [Pourquoi utiliser la POO ?](#2️⃣-pourquoi-utiliser-la-poo-)
+3. [Concepts de base : Objets, Classes et Attributs](#3️⃣-concepts-de-base--objets-classes-et-attributs)
+4. [Les Piliers de la POO](#4️⃣-les-piliers-de-la-poo)
+5. [Comparaisons pratiques et analogies](#5️⃣-comparaisons-pratiques-et-analogies)
+6. [Résumé](#6️⃣-résumé)
 
-<hr>
+---
 
-## 1. Qu’est-ce que la Programmation Orientée Objet ?
+## 1️⃣ Qu’est-ce que la Programmation Orientée Objet ?
 La **programmation orientée objet (POO)** est un paradigme de programmation qui organise le code autour de "**choses**" appelées **objets**, plutôt que de simples fonctions et données. Ces objets représentent des éléments du monde réel ou abstrait, comme une voiture, une banque, un utilisateur, ou même une idée.  
 **Exemple simple :**  
 Imagine une voiture. Une voiture a :  
@@ -25,7 +25,9 @@ Imagine une voiture. Une voiture a :
   
 La POO permet de représenter ce type de structure dans un programme informatique.
 
-## 2. Pourquoi utiliser la POO ? 
+<br>
+
+## 2️⃣ Pourquoi utiliser la POO ? 
 ### Avantages principaux :
 - **Organisation claire** : Le code est structuré autour d’objets. Chaque objet est indépendant et responsable de ses propres actions. Cela rend le programme plus lisible et logique.
 - **Réutilisation** : Grâce aux concepts comme l’héritage, on peut réutiliser des morceaux de code, ce qui évite les répétitions inutiles.
@@ -35,7 +37,9 @@ La POO permet de représenter ce type de structure dans un programme informatiqu
 **Exemple pratique :**  
 Imagine que tu développes un jeu vidéo. Chaque perso (héro, ennemi) peut être représenté comme un objet. Chaque perso peut avoir des **attributs** (pv, nom) et des **actions** (attaquer, défendre). Ces objets sont séparés, ce qui rend le développement du jeu plus flexible.
 
-## 3. Concepts de base : Objets, Classes et Attributs
+<br>
+
+## 3️⃣ Concepts de base : Objets, Classes et Attributs
 ### Qu'est-ce-qu'un objet ?
 Un **objet** est une entité identifiable dans un programme. C’est une instance d’une **classe** (voir plus bas). Un objet possède des :  
 - **Attributs (propriétés)** : Les caractéristiques ou informations de l’objet.
@@ -66,7 +70,9 @@ Classe : Animal
 **Analogie :**  
 Une **lampe** a des attributs (*couleur*, *taille*) et des méthodes (`allumer()`, `éteindre()`).
 
-## 4. Les Piliers de la POO
+<br>
+
+## 4️⃣ Les Piliers de la POO
 La POO repose sur 4 concepts, appelés les **piliers de la POO**.  
 Nous allons les introduire ici mais nous les verrons en détail plus tard.
 ###  Encapsulation
@@ -106,13 +112,17 @@ L’**abstraction** consiste à cacher les détails complexes d’un système, p
 **Exemple :**  
 Quand tu utilises une voiture, tu ne vois pas tout le fonctionnement interne du moteur. Tu utilises des commandes simples comme le volant ou les pédales.
 
-## 5. Comparaisons pratiques et analogies
+<br>
+
+## 5️⃣ Comparaisons pratiques et analogies
 - **Classes et Objets** : Une classe est comme une recette, et un objet est comme un gâteau fait avec cette recette.
 - **Encapsulation** : C’est comme une boîte qui protège son contenu, et où on accède aux objets via des boutons à l’extérieur.
 - **Héritage** : C’est comme une famille. Les enfants héritent de traits communs (cheveux, yeux) tout en ayant des traits propres.
 - **Polymorphisme** : C’est comme un smartphone. Une seule interface (écran tactile) peut effectuer des actions différentes (appeler, écrire un SMS, jouer).
 
-## 6. Résumé
+<br>
+
+## 6️⃣ Résumé
 - La POO organise le code autour des objets.
 - Les objets ont des **attributs** et des **méthodes**.
 - Les 4 piliers de la POO sont : **Encapsulation**, **Héritage**, **Polymorphisme**, **Abstraction**.

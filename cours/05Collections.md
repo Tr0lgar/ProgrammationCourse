@@ -7,11 +7,13 @@ order: 5  # Ordre de tri
 # Les Collections
 
 ## Sommaire : 
-- [1. Introduction](#1-introduction)
-- [2. Les types de Collections](#2-les-types-de-collections)
-- [3. Focus sur les Listes (List&lt;T&gt;)](#3-focus-sur-les-listes-listt)
+1. [Introduction](#1️⃣-introduction)
+2. [Les types de Collections](#2️⃣-les-types-de-collections)
+3. [Focus sur les Listes (List&lt;T&gt;)](#3️⃣-focus-sur-les-listes-listt)
 
-## 1. Introduction
+---
+
+## 1️⃣ Introduction
 Les collections en C# sont des structures de données qui permettent de stocker et de gérer un ensemble d'éléments, de manière **dynamique et plus flexible qu'un tableau classique**. Contrairement aux tableaux, les collections peuvent changer de taille dynamiquement (ajouter ou supprimer des éléments facilement) et fournissent des méthodes pratiques pour manipuler les données.
 
 ### Pourquoi utiliser des Collections ?
@@ -19,7 +21,9 @@ Les collections en C# sont des structures de données qui permettent de stocker 
 - **Méthodes utilitaires** : Elles fournissent des méthodes pour rechercher, trier, ajouter, et supprimer des éléments.
 - **Types variés** : Plusieurs types de collections sont disponibles pour répondre à des besoins spécifiques.
 
-## 2. Les types de Collections
+<br>
+
+## 2️⃣ Les types de Collections
 Voici une liste non exhaustive des collections les plus couramment utilisées :
 1. **List&lt;T&gt;** : Ine liste générique qui permet de stocker des éléments de n'importe que type.
 2. **Dictionary<TKey, TValue>** : Une collection qui associe des clés à des valeurs, comme un dictionnaire.
@@ -74,7 +78,9 @@ class Program
 }
 ```
 
-## 3. Focus sur les Listes (List&lt;T&gt;)
+<br>
+
+## 3️⃣ Focus sur les Listes (List&lt;T&gt;)
 Les listes sont l'une des collections les plus utilisées en C#. Elles permettent de stocker un ensemble d'éléments d'un type spécifique (grâce au `<T>0`, le type générique) et sont capables de se redimensionner dynamiquement.
 
 ### Déclaration et Initialisation d'une List
@@ -210,5 +216,5 @@ class Program
 #### Solution :
 [Télécharger la solution](../solutions/fruits.cs)
 
-## 4. *Suite*
+## 4️⃣ *Suite*
 *Le contenu de cette page peut être potentiellement modifié pour faire le focus d'autres collections*
