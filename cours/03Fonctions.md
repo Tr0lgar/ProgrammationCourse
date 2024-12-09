@@ -7,7 +7,7 @@ order: 3  # Ordre de tri
 # Les Fonctions (ou Méthodes)
 
 ## Sommaire
-1. [Introduction aux Fonctions](#1️⃣-introduction-aux-fonctions*)
+1. [Introduction aux Fonctions](#1️⃣-introduction-aux-fonctions)
 2. [Déclaration d'une Fonction](#2️⃣-déclaration-dune-fonction)
 3. [Appel d'une fonction](#3️⃣-appel-dune-fonction)
 4. [Les fonctions avec un type de retour `void`](#4️⃣-les-fonctions-avec-un-type-de-retour-void)
