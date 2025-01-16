@@ -33,4 +33,4 @@ Merci d'utiliser ce petit cours ! J'espère que cela t'aidera à te lancer dans 
 N'oublie pas : l'erreur est humaine, et c'est en codant qu'on apprend. 😉
 
 Bon courage et happy coding !
-- [Mathis Derwael]
+- Mathis Derwael
